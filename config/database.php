@@ -12,13 +12,21 @@ return [
   | you may use many connections at once using the Database library.
   |
   */
+<<<<<<< HEAD
   'default' => env('DB_CONNECTION', 'pgsql'),
+=======
+>>>>>>> 7166483fcd3bec256228f42b9d2b96b1955036dc
   $url = parse_url(getenv("DATABASE_URL"));
 
   $host = $url["host"];
   $username = $url["user"];
   $password = $url["pass"];
   $database = substr($url["path"], 1);
+<<<<<<< HEAD
+=======
+  'default' => env('DB_CONNECTION', 'pgsql'),
+
+>>>>>>> 7166483fcd3bec256228f42b9d2b96b1955036dc
   /*
   |--------------------------------------------------------------------------
   | Database Connections
