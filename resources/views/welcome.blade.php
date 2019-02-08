@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    AV Business!
+                    Altijd verzorgd MKB
                 </div>
 
                 <div class="links">
