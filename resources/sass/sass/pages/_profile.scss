@@ -1,0 +1,102 @@
+//main:../../app.scss
+/**/
+.profile {
+  position: relative;
+  float: left;
+  height: 100%;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.profile img {
+  pointer-events: none;
+}
+.profile .photo {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  opacity: 1;
+  box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  -webkit-transform: translate(-50%, 0%);
+  transform: translate(-50%, 0%);
+}
+.profile .background {
+  width: 100%;
+  height:100%;
+  object-fit: cover;
+  vertical-align: top;
+  opacity: 0.7;
+  -webkit-filter: grayscale(100%) blur(10px);
+  filter: grayscale(100%) blur(10px);
+}
+.profile h3 {
+  margin: 0 0 5px;
+  font-weight: 400;
+}
+.profile h3 span {
+  display: block;
+  font-size: 0.6em;
+  color: #f39c12;
+  opacity: 0.75;
+}
+.profile figcaption {
+  width: 100%;
+  padding: 15px 25px;
+  position: absolute;
+  left: 0;
+  top: 65%;
+}
+.profile .smenu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+.profile .smenu:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: none;
+  -webkit-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  z-index: -1;
+}
+.profile:hover .smenu:before, .profile.hover .smenu:before {
+  background: white;
+}
+
+.profile:hover .smenu .col > i{
+  color:$textmain;
+}
+.cijfer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 75px solid #ccc;
+  border-left: 75px solid transparent;
+}
+.tcijfer {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 1;
+  cursor: pointer;
+}

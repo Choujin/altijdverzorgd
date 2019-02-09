@@ -1,0 +1,83 @@
+//main:../../app.scss
+/*card,*/
+.gap {
+  display: inline-block;
+}
+
+.dinsten{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  background: rgb(255, 255, 255);
+  overflow: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px #555;
+  padding:0;
+}
+
+.dinsten .front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  transition: .4s;
+}
+
+.back{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  color: #fff;
+  padding: 5px;
+  display: table;
+  opacity: 0;
+  transition: .4s;
+  transform: translateY(100%);
+}
+
+.dinsten .front .title-front-card{
+  background: rgba(255,255,255,0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #000;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition: .3s;
+
+}
+
+.back span{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.back span ul{
+  padding-left: 0;
+}
+.back span ul li{
+  display: inline-block;
+  font-size: 32px;
+  margin: 10px
+}
+
+.dinsten:hover .back{
+  opacity: 1;
+  transform: translateY(0);
+  background: rgba(0,0,0,0.8);
+}
+
+.dinsten:hover .front{
+
+  transform: scale(1.15);
+}
+.dinsten:hover .title-front-card{
+  opacity: 0;
+}
+
+/*END Products*/
