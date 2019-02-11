@@ -39,6 +39,8 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapMunicipalityRoutes();
+
         $this->mapStudentRoutes();
 
         $this->mapMemberRoutes();
@@ -74,7 +76,24 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware(['web'])
              ->namespace($this->namespace)
              ->group(base_path('routes/student.php'));
+    }    
+    
+    /**
+     * Define the "municipality" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapMunicipalityRoutes()
+    {
+        Route::prefix('municipality')
+             ->middleware(['web'])
+             ->namespace($this->namespace)
+             ->group(base_path('routes/municipality.php'));
     }
+
+
 
 
 

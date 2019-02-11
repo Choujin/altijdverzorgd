@@ -36,6 +36,11 @@ return [
     */
 
     'guards' => [
+        'municipality' => [
+            'driver'   => 'session',
+            'provider' => 'municipalitys',
+        ],
+
         'student' => [
             'driver'   => 'session',
             'provider' => 'students',
@@ -75,6 +80,11 @@ return [
     */
 
     'providers' => [
+        'municipalitys' => [
+            'driver' => 'eloquent',
+            'model'  => App\Municipality::class,
+        ],
+
         'students' => [
             'driver' => 'eloquent',
             'model'  => App\Student::class,
@@ -112,6 +122,12 @@ return [
     */
 
     'passwords' => [
+        'municipalitys' => [
+            'provider' => 'municipalitys',
+            'table'    => 'password_resets',
+            'expire'   => 60,
+        ],
+
         'students' => [
             'provider' => 'students',
             'table'    => 'password_resets',
