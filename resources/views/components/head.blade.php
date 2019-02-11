@@ -18,7 +18,7 @@
   <link rel="mask-icon" href="images/logo/safari-pinned-tab.svg">
   <meta name="msapplication-TileColor" content="#c1f528">
   <meta name="msapplication-TileImage" content="images/logo/mstile-144x144.png">
-  <link rel="icon" href="favicon.ico">
+  <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
   <meta name="theme-color" content="rgb(143, 189, 64)">
   <!-- #919096 #9c27b0 -->
   <!-- for Facebook -->
