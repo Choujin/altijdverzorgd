@@ -1,4 +1,4 @@
-<header id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-dark">
+<header id="navbar-example" class="hpheader navbar fixed-top navbar-expand-lg navbar-dark">
   <!-- bg-green -->
   <div class="container">
     <a class="navbar-brand" href="#home">

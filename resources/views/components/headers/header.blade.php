@@ -1,4 +1,4 @@
-<header id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-dark bg-green">
+<header id="navbar-example" class="navbar fixed-top navbar-expand-lg navbar-dark bgreen">
   <!-- bg-green -->
   <div class="container">
     <a class="navbar-brand" href="#home">
@@ -9,8 +9,34 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse text-center" style="margin-left:-1rem;" id="navbarNav">
+      <!-- <ul class="navbar-nav justify-content-start">
+                           <li class="nav-item">
+        <a class="nav-link active" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#how">Hoe werkt het?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#apps">App's</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#yourav">Jouw AV</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#blog">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#cijfers">Cijfers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#footer">Info</a>
+      </li>
+    </ul> -->
     <hr style="margin-left:1rem;">
     <ul class="navbar-nav justify-content-end mainnav">
+      <!-- 		<li class="nav-item">
+      <a class="nav-link" href="#" title="Winkelwagen"><i class="fas fa-shopping-cart" alt="Winkelwagen"></i> Winkelwagen</a>
+    </li> -->
     <li class="nav-item active">
       <a class="nav-link" href="#" data-toggle="modal" data-target="#mijn-av-users" title="Zoek pagina van mensen of van het zaak "><i class="fas fa-users"></i> Leden</a>
     </li>
