@@ -69,4 +69,7 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+    protected function registered(Request $request, $user) {
+        $user->notify(new UserRegisteredNotification($user));
+    }
 }

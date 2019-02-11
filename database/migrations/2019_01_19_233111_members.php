@@ -21,13 +21,13 @@ class Members extends Migration
         $table->string('email')->unique();
         $table->timestamp('email_verified_at')->nullable();
         $table->string('password');
-        $table->string('profile_link');
-        $table->string('src_img');
+        $table->string('profile_link')->default('default-profile.png');
+        $table->string('src_img')->default('default-profile.png');
         $table->string('specialisation');
         $table->string('work_location');
-        $table->integer('digit');
-        $table->integer('likes');
-        $table->integer('comments');
+        $table->integer('digit')->nullable();
+        $table->integer('likes')->nullable();
+        $table->integer('comments')->nullable();
         $table->rememberToken();
         $table->timestamps();
       });
