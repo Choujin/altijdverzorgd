@@ -139,9 +139,8 @@
   <hr class="mb-0">
   <!--Copyright-->
   <div class="py-3 text-center">
-    © 2018 Copyright:
-    <a href="https://www.altijdverzorgd.nl/"> Altijdverzorgd.nl </a>
-  </div>
+    © <script>document.write(new Date().getFullYear())</script> Copyright Altijdverzorgd.nl
+ </div>
   <!--/.Copyright-->
 </footer>
 <a href="#home" class="btt btn-success btn-lg" data-toggle="tooltip" data-placement="left" title="Terug naar begin" aria-label="Terug naar begin"><i class="fas fa-arrow-up"></i></a>
