@@ -39,8 +39,46 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapWebRoutes();
 
+        $this->mapStudentRoutes();
+
+        $this->mapMemberRoutes();
+
         //
+    }    
+    
+    /**
+     * Define the "member" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapMemberRoutes()
+    {
+        Route::prefix('member')
+             ->middleware(['web'])
+             ->namespace($this->namespace)
+             ->group(base_path('routes/member.php'));
+    }    
+    
+    /**
+     * Define the "student" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapStudentRoutes()
+    {
+        Route::prefix('student')
+             ->middleware(['web'])
+             ->namespace($this->namespace)
+             ->group(base_path('routes/student.php'));
     }
+
+
+
+
 
     /**
      * Define the "web" routes for the application.
