@@ -14,6 +14,7 @@ Route::get('/', 'DataInfoController@startpage', function () {
     return view('welcome');
 });
 Route::get('/products', 'ProductsController@ProductsList');
+Route::get('/business-info','BusinessInfo@startpage');
 Route::get('/members', 'MembersListController@memberlistsearch');
 
 Auth::routes();
