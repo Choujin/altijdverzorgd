@@ -53,7 +53,9 @@ body {
 <body class="text-center">
   <form class="form-signin" method="POST" action="{{ route('student.login') }}" aria-label="{{ __('Student Login') }}">
     @csrf
-    <img class="mb-4" data-src="https://www.altijdverzorgd.nl/test/assets/img/logo/android-chrome-512x512.png" alt="" width="72" height="72">
+    <a href="/">
+      <img class="mb-4" data-src="https://www.altijdverzorgd.nl/test/assets/img/logo/android-chrome-512x512.png" alt="" width="72" height="72">
+    </a>
     <h1 class="h3 mb-3 font-weight-normal">Student Login</h1>
 
     <div>
