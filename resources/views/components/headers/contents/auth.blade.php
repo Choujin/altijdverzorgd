@@ -72,7 +72,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-user"></i></div>
                   </div>
-                  <input id="register-name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+                  <input id="register-name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" placeholder="Naam" required autofocus>
 
                   @if ($errors->has('name'))
                       <span class="invalid-feedback" role="alert">
@@ -87,7 +87,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-envelope"></i></div>
                   </div>
-                  <input id="register-email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                  <input id="register-email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Email address" required>
                   @if ($errors->has('email'))
                       <span class="invalid-feedback" role="alert">
                           <strong>{{ $errors->first('email') }}</strong>
@@ -101,7 +101,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-key"></i></div>
                   </div>
-                  <input id="register-password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                  <input id="register-password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Wachtwoord" required>
 
                   @if ($errors->has('password'))
                       <span class="invalid-feedback" role="alert">
@@ -118,7 +118,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-lock"></i></div>
                   </div>
-                  <input id="register-password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                  <input id="register-password-confirm" type="password" class="form-control" name="password_confirmation" placeholder="Wachtwoord nog een keer" required>
                   <div class="input-group-append">
                     <button class="btn btn-outline-secondary showpas" type="button"><i class="fas fa-eye"></i></button>
                   </div>
@@ -144,7 +144,7 @@
                   <div class="input-group-prepend">
                     <div class="input-group-text"><i class="fas fa-envelope"></i></div>
                   </div>
-                  <input id="forgot-email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                  <input id="forgot-email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" placeholder="Email address"required>
 
                   @if ($errors->has('email'))
                       <span class="invalid-feedback" role="alert">
