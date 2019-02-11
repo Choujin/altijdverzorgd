@@ -128,16 +128,16 @@
       </div>
       <hr class="clearfix w-100 d-md-none mb-0">
       <div class="col-md-3 mx-auto shfooter">
-        <h5 class="mb-4 mt-3 font-weight-bold d-none d-md-block">Login/Register</h5>
-        <div class="d-md-none title" data-target="#LoginRegister" data-toggle="collapse">
-          <div class="mt-3 font-weight-bold">Login/Register
+        <h5 class="mb-4 mt-3 font-weight-bold d-none d-md-block">Auth</h5>
+        <div class="d-md-none title" data-target="#Auth" data-toggle="collapse">
+          <div class="mt-3 font-weight-bold">Auth
             <div class="float-right navbar-toggler">
               <i class="fas fa-angle-down"></i>
               <i class="fas fa-angle-up"></i>
             </div>
           </div>
         </div>
-        <ul class="list-unstyled collapse" id="LoginRegister">
+        <ul class="list-unstyled collapse" id="Auth">
           <li>
             <a href="/admin" title="Developers">Developers</a>
           </li>
