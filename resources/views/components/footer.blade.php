@@ -54,16 +54,16 @@
         </div>
         <ul class="list-unstyled collapse" id="Zakelijk">
           <li>
-            <a href="/zaakaanbevelen" title="Zaak aanbevelen">Zaak aanbevelen</a>
+            <a href="/buisnessinfo" title="Zaak aanbevelen">Buisness info</a>
           </li>
           <li>
             <a href="/persoonaanbevelen" title="Werknemer aanbevelen">Persoon aanbevelen</a>
           </li>
           <li>
-            <a href="/zaakaanmelden" title="Zaak aanmelden">Eigen zaak aanmelden</a>
+            <a href="/zakelijkinlog" title="Zaak aanmelden">Zakelijk inlogen</a>
           </li>
           <li>
-            <a href="/jezelfaanmelden" title="Je zelf aanmelden">Je zelf aanmelden</a>
+            <a href="/memberregistration" title="Je zelf aanmelden">Zakelijk account aan maken</a>
           </li>
           <li>
             <a href="/vacatures" title="Vacatures">Vacatures</a>
