@@ -36,8 +36,13 @@
             <img class="p-2" data-src="images/business-info-hands.svg" width="130px" alt="">
             <h4>... met een gemakkelijk te gebruiken systeem</h4>
             <p>Beheer afspraken onderweg.</p>
-          </div>
+          </div>      
       </div>
+      <div class="row justify-content-center">
+          <div class="col-4">
+              <button type="button" class="btn btn-success btn-lg auto mt-5">Ik wil een demo</button>
+          </div>
+        </div>
       </div>
     </section>
     
