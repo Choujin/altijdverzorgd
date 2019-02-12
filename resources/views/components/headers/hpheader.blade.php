@@ -1,7 +1,7 @@
 <header id="navbar-example" class="hpheader navbar fixed-top navbar-expand-lg navbar-dark">
   <!-- bg-green -->
   <div class="container">
-    <a class="navbar-brand" href="#home">
+    <a class="navbar-brand" href="/">
       <img data-src="images/logo/apple-touch-icon-76x76-precomposed.png" class="d-inline-block align-top" alt="" height="30" width="30">
       Altijd Verzorgd
     </a>
