@@ -96,11 +96,11 @@ body {
 
           <div class="col row d-flex justify-content-around ml-0">
               <div class="custom-control custom-radio">
-                <input id="customRadio1" type="radio" name="gender" value="men" class="custom-control-input">
+                <input id="customRadio1" type="radio" name="gender" value="male" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio1">Men</label>
               </div>
               <div class="custom-control custom-radio">
-                <input id="customRadio2" type="radio" name="gender" value="women" class="custom-control-input">
+                <input id="customRadio2" type="radio" name="gender" value="female" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio2">Women</label>
               </div>
               @if ($errors->has('surname'))
