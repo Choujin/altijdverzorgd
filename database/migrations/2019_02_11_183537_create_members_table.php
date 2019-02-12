@@ -25,9 +25,9 @@ class CreateMembersTable extends Migration
           $table->string('src_img')->default('default-profile.png');
           $table->string('specialisation');
           $table->string('work_location');
-          $table->integer('digit')->nullable();
-          $table->integer('likes')->nullable();
-          $table->integer('comments')->nullable();
+          $table->integer('digit')->default('0');
+          $table->integer('likes')->default('0');
+          $table->integer('comments')->default('0');
           $table->rememberToken();
           $table->timestamps();
         });
