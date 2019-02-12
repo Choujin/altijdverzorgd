@@ -51,7 +51,7 @@ body {
 }
 </style>
 <body class="text-center">
-  <form class="form-signin" method="POST" action="{{ route('login') }}" aria-label="{{ __('User Login') }}">
+  <form class="form-signin bg-white rounded" method="POST" action="{{ route('login') }}" aria-label="{{ __('User Login') }}">
     @csrf
     <a href="/">
       <img class="mb-4" data-src="https://www.altijdverzorgd.nl/test/assets/img/logo/android-chrome-512x512.png" alt="" width="72" height="72">
