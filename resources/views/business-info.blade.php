@@ -47,7 +47,7 @@
 
     <section class="bg-green pb-5">
         <div class="container text-center">
-            <h1 class="text-white display-5 py-5">Wat kan Altijd verzorgd voor jou betekenen?</h1>
+            <h1 class="text-white display-5 mb-5 py-5">Wat kan Altijd verzorgd voor jou betekenen?</h1>
             <div class="row">
                 <div class="col-sm-12 col-md-6">
                     <img class="img-fluid" data-src="images/business-info-desktop-phone.png" alt="Altijd verzorgd websites">
@@ -75,9 +75,9 @@
     </section>
     
     <section class="text-center py-5">
-        <div class="container color-green">
-          <h1 class="text-green display-5 pt-4"> Vul hieronder het <br> aanmeldingsformulier in</h1>
-          <p class="text-green display-6 py-4">Vul vrijblijvend het aanmeldingsformulier in zodat wij telefonisch contact met je kunnen opnemen.</p>
+        <div class="container">
+          <h1 class="color-green display-5 pt-4"> Vul hieronder het <br> aanmeldingsformulier in</h1>
+          <p class="display-6 py-4 text-dark">Vul vrijblijvend het aanmeldingsformulier in zodat wij telefonisch contact met je kunnen opnemen.</p>
          
         </div>
       </section>
