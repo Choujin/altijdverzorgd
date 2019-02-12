@@ -90,7 +90,7 @@
 
                     <div class="col-3">
                         <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
-                            name="name" value="{{ old('name') }}" required autofocus>
+                            name="name" value="{{ old('name') }}" required>
 
                         @if ($errors->has('name'))
                         <span class="invalid-feedback" role="alert">
@@ -104,7 +104,7 @@
 
                     <div class="col-3">
                         <input id="surname" type="text" class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}"
-                            name="surname" value="{{ old('surname') }}" required autofocus>
+                            name="surname" value="{{ old('surname') }}" required>
 
                         @if ($errors->has('surname'))
                         <span class="invalid-feedback" role="alert">
