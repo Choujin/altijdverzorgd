@@ -11,14 +11,14 @@
   <meta name="author" content="Jettaz Frankenstein">
   <meta property="og:title" content="Op zoek naar een snel en gemakkelijke dienst ?">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="img/logo/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="img/logo/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="img/logo/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/logo/favicon-16x16.png">
-  <link rel="mask-icon" href="img/logo/safari-pinned-tab.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/logo/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/logo/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/logo/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/logo/favicon-16x16.png">
+  <link rel="mask-icon" href="images/logo/safari-pinned-tab.svg">
   <meta name="msapplication-TileColor" content="#c1f528">
-  <meta name="msapplication-TileImage" content="img/logo/img/logo/mstile-144x144.png">
-  <link rel="icon" href="favicon.ico">
+  <meta name="msapplication-TileImage" content="images/logo/mstile-144x144.png">
+  <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
   <meta name="theme-color" content="rgb(143, 189, 64)">
   <!-- #919096 #9c27b0 -->
   <!-- for Facebook -->

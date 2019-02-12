@@ -31,7 +31,9 @@ html {
 @import "sass/pages/members";
 @import "sass/pages/profile";
  /*rest*/
-
+section:first-of-type{
+    padding-top:56px;
+}
  .grid {
    height: 100%;
    position: relative;

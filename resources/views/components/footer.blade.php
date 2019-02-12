@@ -54,16 +54,10 @@
         </div>
         <ul class="list-unstyled collapse" id="Zakelijk">
           <li>
-            <a href="/buisnessinfo" title="Zaak aanbevelen">Buisness info</a>
+            <a href="/buisnessinfo" title="Buisness info">Buisness info</a>
           </li>
           <li>
-            <a href="/persoonaanbevelen" title="Werknemer aanbevelen">Persoon aanbevelen</a>
-          </li>
-          <li>
-            <a href="/zakelijkinlog" title="Zaak aanmelden">Zakelijk inlogen</a>
-          </li>
-          <li>
-            <a href="/memberregistration" title="Je zelf aanmelden">Zakelijk account aan maken</a>
+            <a href="/persoonaanbevelen" title="Persoon aanbevelen">Persoon aanbevelen</a>
           </li>
           <li>
             <a href="/vacatures" title="Vacatures">Vacatures</a>
@@ -116,19 +110,48 @@
         </div>
         <ul class="list-unstyled collapse" id="Site">
           <li>
-            <a href="p/algemene-voorwaarden" title="Algemene voorwaarden Altijdverzorgd.nl">Algemene voorwaarden</a>
+            <a href="/algemene-voorwaarden" title="Algemene voorwaarden Altijdverzorgd.nl">Algemene voorwaarden</a>
           </li>
           <li>
-            <a href="p/privacy-statement" title="Privacy statement Altijdverzorgd.nl">Privacy statement</a>
+            <a href="/privacy-statement" title="Privacy statement Altijdverzorgd.nl">Privacy statement</a>
           </li>
           <li>
-            <a href="p/cookieverklaring" title="Cookieverklaring Altijdverzorgd.nl">Cookieverklaring</a>
+            <a href="/cookieverklaring" title="Cookieverklaring Altijdverzorgd.nl">Cookieverklaring</a>
           </li>
           <li>
-            <a href="p/foutmelden" title="Fout melden">Fout melden</a>
+            <a href="/foutmelden" title="Fout melden">Fout melden</a>
           </li>
           <li>
             <a href="mailto:bugbounty@altijdverzorgd.com" title="Security Bounty Altijdverzorgd.nl">Security Bounty</a>
+          </li>
+        </ul>
+      </div>
+      <hr class="clearfix w-100 d-md-none mb-0">
+      <div class="col-md-3 mx-auto shfooter">
+        <h5 class="mb-4 mt-3 font-weight-bold d-none d-md-block">Auth</h5>
+        <div class="d-md-none title" data-target="#Auth" data-toggle="collapse">
+          <div class="mt-3 font-weight-bold">Auth
+            <div class="float-right navbar-toggler">
+              <i class="fas fa-angle-down"></i>
+              <i class="fas fa-angle-up"></i>
+            </div>
+          </div>
+        </div>
+        <ul class="list-unstyled collapse" id="Auth">
+          <li>
+            <a href="/admin" title="Developers">Developers</a>
+          </li>
+          <li>
+            <a href="/member" title="Leden">Leden</a>
+          </li>
+          <li>
+            <a href="/municipality" title="Gemeentes">Gemeentes</a>
+          </li>
+          <li>
+            <a href="/student" title="Studenten">Studenten</a>
+          </li>
+          <li>
+            <a href="/login" title="Klanten">Klanten</a>
           </li>
         </ul>
       </div>

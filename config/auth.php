@@ -36,6 +36,21 @@ return [
     */
 
     'guards' => [
+        'municipality' => [
+            'driver'   => 'session',
+            'provider' => 'municipalitys',
+        ],
+
+        'student' => [
+            'driver'   => 'session',
+            'provider' => 'students',
+        ],
+
+        'member' => [
+            'driver'   => 'session',
+            'provider' => 'members',
+        ],
+
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
@@ -65,6 +80,21 @@ return [
     */
 
     'providers' => [
+        'municipalitys' => [
+            'driver' => 'eloquent',
+            'model'  => App\Municipality::class,
+        ],
+
+        'students' => [
+            'driver' => 'eloquent',
+            'model'  => App\Student::class,
+        ],
+
+        'members' => [
+            'driver' => 'eloquent',
+            'model'  => App\Member::class,
+        ],
+
         'users' => [
             'driver' => 'eloquent',
             'model' => App\User::class,
@@ -92,6 +122,24 @@ return [
     */
 
     'passwords' => [
+        'municipalitys' => [
+            'provider' => 'municipalitys',
+            'table'    => 'password_resets',
+            'expire'   => 60,
+        ],
+
+        'students' => [
+            'provider' => 'students',
+            'table'    => 'password_resets',
+            'expire'   => 60,
+        ],
+
+        'members' => [
+            'provider' => 'members',
+            'table'    => 'password_resets',
+            'expire'   => 60,
+        ],
+
         'users' => [
             'provider' => 'users',
             'table' => 'password_resets',
