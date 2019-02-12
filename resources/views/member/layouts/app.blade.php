@@ -101,7 +101,7 @@
 
 .sidebar {
   width: 90px !important;
-  background-color: #212529;
+  background-color: #8fbd40;
   min-height: calc(100vh - 56px);
 }
 
@@ -337,9 +337,14 @@ body.sidebar-toggled footer.sticky-footer {
   }
 }</style>
 <body>
-        <nav class="navbar navbar-expand navbar-dark bg-dark static-top d-flex justify-content-between">
 
-                <div><a class="navbar-brand mr-1" href="#">Welkom</a>
+
+        <nav class="navbar navbar-expand navbar-dark bg-green static-top d-flex justify-content-between">
+
+            <div>
+                <img href="#" data-src="https://www.altijdverzorgd.nl/test/assets/img/logo/mstile-144x144.png" alt="" width="27" height="27">Welkom</a>
+
+
 
                 <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
                   <i class="fas fa-bars"></i>
