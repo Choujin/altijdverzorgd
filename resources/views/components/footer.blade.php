@@ -119,7 +119,7 @@
             <a href="/cookieverklaring" title="Cookieverklaring Altijdverzorgd.nl">Cookieverklaring</a>
           </li>
           <li>
-            <a href="/foutmelden" title="Fout melden">Fout melden</a>
+            <a href="/errormessage" title="Fout melden">Fout melden</a>
           </li>
           <li>
             <a href="mailto:bugbounty@altijdverzorgd.com" title="Security Bounty Altijdverzorgd.nl">Security Bounty</a>
