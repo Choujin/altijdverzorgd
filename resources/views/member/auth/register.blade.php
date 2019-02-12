@@ -96,11 +96,11 @@ body {
 
           <div class="col row d-flex justify-content-around ml-0">
               <div class="custom-control custom-radio">
-                <input id="customRadio1" type="radio" name="gender" value="men" class="custom-control-input">
+                <input id="customRadio1" type="radio" name="gender" value="male" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio1">Men</label>
               </div>
               <div class="custom-control custom-radio">
-                <input id="customRadio2" type="radio" name="gender" value="women" class="custom-control-input">
+                <input id="customRadio2" type="radio" name="gender" value="female" class="custom-control-input">
                 <label class="custom-control-label" for="customRadio2">Women</label>
               </div>
               @if ($errors->has('surname'))
@@ -170,7 +170,7 @@ body {
           </select>
       </div> -->
       <div class="form-group row mb-0">
-          <div class="col offset-md-4">
+          <div class="col">
               <button type="submit" class="btn btn-success btn-block">
                   {{ __('Register') }}
               </button>
@@ -183,7 +183,7 @@ body {
       <a class="btn btn-link" href="{{ route('member.password.request') }}">
           {{ __('Forgot Your Password?') }}
       </a>
-      <p class="mt-2 mb-3 text-muted">&copy;2019 Jettaz Frankenstein</p>
+      <p class="mt-2 mb-3 text-muted">&copy;2019 Altijdverzorgd.nl</p>
   </form>
 @include('components.scripts')
 </body>

@@ -90,7 +90,7 @@ body {
     <a class="btn btn-link" href="{{ route('password.request') }}">
         {{ __('Forgot Your Password?') }}
     </a>
-    <p class="mt-2 mb-3 text-muted">&copy;2019 Jettaz Frankenstein</p>
+    <p class="mt-2 mb-3 text-muted">&copy;2019 Altijdverzorgd.nl</p>
   </form>
 @include('components.scripts')
 </body>
