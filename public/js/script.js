@@ -22,11 +22,11 @@ $(window).ready(function() {
         if (scrollTop > scrollTrigger) {
           $('.btt').fadeIn();
           $('.tohow').fadeOut();
-          $('header').addClass('bg-green');
+          $('.hpheader').addClass('bg-green');
         } else {
           $('.btt').fadeOut();
           $('.tohow').fadeIn();
-          $('header').removeClass('bg-green');
+          $('.hpheader').removeClass('bg-green');
         }
       };
     backToTop();
