@@ -170,7 +170,7 @@ body {
           </select>
       </div> -->
       <div class="form-group row mb-0">
-          <div class="col offset-md-4">
+          <div class="col">
               <button type="submit" class="btn btn-success btn-block">
                   {{ __('Register') }}
               </button>
