@@ -4,7 +4,10 @@ namespace App\Http\Controllers\Member\Auth;
 
 use App\Member;
 use App\Http\Controllers\Controller;
+use App\Notifications\UserRegisteredNotification;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Foundation\Auth\RegistersUsers;
 
@@ -92,6 +95,10 @@ class RegisterController extends Controller
     protected function guard()
     {
         return Auth::guard('member');
+    }
+
+    protected function registered(Request $request, $user) {
+      $user->notify(new UserRegisteredNotification($user));
     }
 
 }

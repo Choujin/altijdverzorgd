@@ -91,7 +91,7 @@ body {
           </div>
       </div>
 
-      <div class="form-group row ">
+      <div class="form-group row">
           <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
 
           <div class="col row d-flex justify-content-around ml-0">

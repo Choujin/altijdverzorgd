@@ -72,6 +72,6 @@ class RegisterController extends Controller
         ]);
     }
     protected function registered(Request $request, $user) {
-    $user->notify(new UserRegisteredNotification($user));
-}
+      $user->notify(new UserRegisteredNotification($user));
+    }
 }
