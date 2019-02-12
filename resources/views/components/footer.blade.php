@@ -54,7 +54,7 @@
         </div>
         <ul class="list-unstyled collapse" id="Zakelijk">
           <li>
-            <a href="/buisnessinfo" title="Buisness info">Buisness info</a>
+            <a href="/business-info" title="Buisness info">Buisness info</a>
           </li>
           <li>
             <a href="/persoonaanbevelen" title="Persoon aanbevelen">Persoon aanbevelen</a>
