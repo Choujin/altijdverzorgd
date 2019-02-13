@@ -151,56 +151,56 @@
 }
 
 @media (min-width: 768px) {
-  .sidebar {
+  .sidebar.toggled {
     width: 225px !important;
   }
-  .sidebar .nav-item .nav-link {
+  .sidebar.toggled .nav-item .nav-link {
     display: block;
     width: 100%;
     text-align: left;
     padding: 1rem;
     width: 225px;
   }
-  .sidebar .nav-item .nav-link span {
+  .sidebar.toggled .nav-item .nav-link span {
     font-size: 1rem;
     display: inline;
   }
-  .sidebar .nav-item .dropdown-menu {
+  .sidebar.toggled .nav-item .dropdown-menu {
     position: static !important;
     margin: 0 1rem;
     top: 0;
   }
-  .sidebar .nav-item.dropdown .dropdown-toggle::after {
+  .sidebar.toggled .nav-item.dropdown .dropdown-toggle::after {
     display: block;
   }
-  .sidebar.toggled {
+  .sidebar {
     overflow: visible;
     width: 90px !important;
   }
-  .sidebar.toggled .nav-item:last-child {
+  .sidebar .nav-item:last-child {
     margin-bottom: 1rem;
   }
-  .sidebar.toggled .nav-item .nav-link {
+  .sidebar .nav-item .nav-link {
     text-align: center;
     padding: 0.75rem 1rem;
     width: 90px;
   }
-  .sidebar.toggled .nav-item .nav-link span {
+  .sidebar.nav-item .nav-link span {
     font-size: 0.65rem;
     display: block;
   }
-  .sidebar.toggled .nav-item .dropdown-menu {
+  .sidebar .nav-item .dropdown-menu {
     position: absolute !important;
     -webkit-transform: none !important;
     transform: none !important;
     left: calc(90px + 0.5rem) !important;
     margin: 0;
   }
-  .sidebar.toggled .nav-item .dropdown-menu.dropup {
+  .sidebar.nav-item .dropdown-menu.dropup {
     bottom: 0;
     top: auto !important;
   }
-  .sidebar.toggled .nav-item.dropdown .dropdown-toggle::after {
+  .sidebar .nav-item.dropdown .dropdown-toggle::after {
     display: none;
   }
 }
@@ -463,46 +463,13 @@ body.sidebar-toggled footer.sticky-footer {
     </div>
 @include('components.scripts')
 <script>
-(function($) {
-  "use strict"; // Start of use strict
+
 
   // Toggle the side navigation
-  $("#sidebarToggle").on('click', function(e) {
-    e.preventDefault();
-    $("body").toggleClass("sidebar-toggled");
+  $("#sidebarToggle").on('click', function() {
     $(".sidebar").toggleClass("toggled");
   });
 
-  // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
-  $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function(e) {
-    if ($(window).width() > 768) {
-      var e0 = e.originalEvent,
-        delta = e0.wheelDelta || -e0.detail;
-      this.scrollTop += (delta < 0 ? 1 : -1) * 30;
-      e.preventDefault();
-    }
-  });
-
-  // Scroll to top button appear
-  $(document).on('scroll', function() {
-    var scrollDistance = $(this).scrollTop();
-    if (scrollDistance > 100) {
-      $('.scroll-to-top').fadeIn();
-    } else {
-      $('.scroll-to-top').fadeOut();
-    }
-  });
-
-  // Smooth scrolling using jQuery easing
-  $(document).on('click', 'a.scroll-to-top', function(event) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top)
-    }, 1000, 'easeInOutExpo');
-    event.preventDefault();
-  });
-
-})(jQuery); // End of use strict
 </script>
 
 </body>
