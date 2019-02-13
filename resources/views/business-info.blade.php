@@ -3,12 +3,19 @@
 
 <body id="app">
     @include('components.headers.hpheader')
-    <section class="bg-green pb-5">
-        <div class="container text-center">
-            <h1 class="display-3 pt-4">Meer klanten, hogere omzet <br> en minder no-shows...</h1>
-            <h2 class="display-4 py-4">Interesse?</h2>
-            <button type="button" class="btn btn-light btn-lg auto my-5s">Vraag nu demo aan</button>
-        </div>
+
+    <section class="business-info-bg pb-5">
+            <div class="container h-100">
+                    <div class="row align-items-center h-100">
+                        <div class="col-12 mx-auto">
+                            <div class="text-center text-white">
+                                    <h1>Meer klanten, hogere omzet <br> en minder no-shows...</h1>
+                                    <h2 class="py-4">Interesse?</h2>
+                                    <a href="#form-business"><button type="button"class="btn btn-green btn-lg auto my-5s">Vraag nu demo aan</button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
     </section>
 
     <section class="text-center py-5">
@@ -41,17 +48,17 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-4">
-                    <button type="button" class="btn btn-success btn-lg auto mt-5">Ik wil een demo</button>
+                        <a href="#form-business"><button type="button" class="btn btn-success btn-lg auto mt-5">Ik wil een demo</button></a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="bg-green pb-5">
+    <section class="bg-green pb-1">
         <div class="container text-center">
-            <h1 class="text-white display-5 mb-5 py-5">Wat kan Altijd verzorgd voor jou betekenen?</h1>
+            <h1 class="text-white py-5">Wat kan Altijd verzorgd voor jou betekenen?</h1>
             <div class="row">
-                <div class="col-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6 pt-5">
                     <img class="img-fluid" data-src="images/business-info-desktop-phone.png" alt="Altijd verzorgd websites">
                 </div>
                 <div class="col-sm-12 col-md-6 text-left mt-5">
@@ -79,10 +86,9 @@
     <section class="text-center py-5">
         <div class="container">
             <h1 class="color-green display-5 pt-4"> Vul hieronder het aanmeldingsformulier in</h1>
-            <p class="display-6 py-4 text-dark">Vul vrijblijvend het aanmeldingsformulier in zodat wij telefonisch
-                contact met je kunnen opnemen.</p>
+            <p class="display-6 py-4 text-dark">Vul het onderstaande formulier in, zodat we zo spoedig mogelijk contact met u kunnen opnemen! </p>
 
-            <form class="form-signin pl-5 ml-5 bg-white rounded" method="POST" action="{{ route('member.register') }}" aria-label="{{ __('Register') }}">
+            <form id="form-business" class="form-signin pl-5 ml-5 bg-white rounded" method="POST" action="{{ route('member.register') }}" aria-label="{{ __('Register') }}">
                 @csrf
 
                 <div class="form-group row">

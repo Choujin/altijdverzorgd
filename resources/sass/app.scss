@@ -132,6 +132,16 @@ section:first-of-type{
    -moz-background-size: cover;
    background-size: cover;
  }
+ .business-info-bg {
+  background-image: url("../images/altijdverzorgd-business-info-bg-duo-1.jpg");
+  background-repeat: no-repeat;
+  /* background-attaQzchment: fixed; */
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 500px;
+}
  @media all and (max-width: 1199px) {
    .page1-1 {
      background-image: url("../images/bg/bg-lg.jpg");
