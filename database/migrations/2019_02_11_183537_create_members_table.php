@@ -21,7 +21,7 @@ class CreateMembersTable extends Migration
           $table->string('email')->unique();
           $table->timestamp('email_verified_at')->nullable();
           $table->string('password');
-          $table->string('profile_link')->default('default-profile.png');
+          $table->string('profile_link')->default('blabla');
           $table->string('src_img')->default('default-profile.png');
           $table->string('specialisation');
           $table->string('work_location');

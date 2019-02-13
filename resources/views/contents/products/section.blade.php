@@ -59,7 +59,6 @@
   <div class="grid col" data-ref="container">
     <div class="row filterresultaat ">
       @foreach ($products as $product)
-
       <div class="card dinsten border-0 m-0 col-xl-3 col-lg-4 col-md-6 {{$product->name}} {{$product->category}} {{$product->tags}}" data-name="{{$product->name}}">
         <div class="front" style="background-image: url('{{$product->src_img}}');">
           <div class="title-front-card">
@@ -78,7 +77,6 @@
           </span>
         </div>
       </div>
-
       @endforeach
     </div>
   </div>
