@@ -1,10 +1,9 @@
 <!-- scripts start -->
-<!-- Scripts -->
+<!-- auto -->
 <script type="text/javascript" src="{{ mix('js/manifest.js') }}"></script>
 <script type="text/javascript" src="{{ mix('js/vendor.js') }}"></script>
 <script type="text/javascript" src="{{ mix('js/app.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/vendor/jquery-3.3.1.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('js/vendor/bootstrap.bundle.min.js') }}"></script>
+<!-- custom -->
 <script type="text/javascript" src="{{ asset('js/vendor/jquery.touchSwipe.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/vendor/lozad.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/vendor/moment-with-locales.js') }}"></script>
