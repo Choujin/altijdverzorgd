@@ -16,6 +16,8 @@ class ProductsList extends Migration
       Schema::create('products', function (Blueprint $table) {
         $table->increments('id');
         $table->string('name');
+        $table->string('city');
+        $table->string('select');
         $table->string('category');
         $table->string('description');
         $table->string('tags');
@@ -30,6 +32,6 @@ class ProductsList extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('member_lists');
+        Schema::dropIfExists('products');
     }
 }

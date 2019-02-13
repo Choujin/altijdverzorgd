@@ -48,10 +48,10 @@
       <h5>Uitzicht</h5>
       <div class="btn-group btn-group-toggle d-flex justify-content-center" data-toggle="buttons">
         <label class="btn btn-outline-success col control active">
-          <input type="radio" name="options" id="option1" autocomplete="off" checked> <i class="fas fa-th-list"></i>
+          <input type="radio" name="options" id="option2" autocomplete="off" checked><i class="fas fa-th"></i>
         </label>
         <label class="btn btn-outline-success col control">
-          <input type="radio" name="options" id="option2" autocomplete="off"><i class="fas fa-th"></i>
+          <input type="radio" name="options" id="option1" autocomplete="off"> <i class="fas fa-th-list"></i>
         </label>
       </div>
     </div>
@@ -59,7 +59,8 @@
   <div class="grid col" data-ref="container">
     <div class="row filterresultaat ">
       @foreach ($products as $product)
-      <div class="card dinsten border-0 m-0 col-xl-3 col-lg-4 col-md-6 {{$product->name}} {{$product->category}} {{$product->tags}} " data-name="{{$product->name}}">
+
+      <div class="card dinsten border-0 m-0 col-xl-3 col-lg-4 col-md-6 {{$product->name}} {{$product->category}} {{$product->tags}}" data-name="{{$product->name}}">
         <div class="front" style="background-image: url('{{$product->src_img}}');">
           <div class="title-front-card">
             <h5>{{ucfirst($product->name)}}</h5>
@@ -77,46 +78,7 @@
           </span>
         </div>
       </div>
-      @endforeach
-      @foreach ($products as $product)
-      <div class="card dinsten border-0 m-0 col-xl-3 col-lg-4 col-md-6 {{$product->name}} {{$product->category}} {{$product->tags}} " data-name="{{$product->name}}">
-        <div class="front" style="background-image: url('{{$product->src_img}}');">
-          <div class="title-front-card">
-            <h5>{{ucfirst($product->name)}}</h5>
-          </div>
-        </div>
-        <div class="back">
-          <span>
-            <h1>{{ucfirst($product->name)}}</h1>
-            {{$product->description}}
-            <ul>
-              <li>
-                <a href="/members" class="btn btn-success">Verder</a>
-              </li>
-            </ul>
-          </span>
-        </div>
-      </div>
-      @endforeach
-      @foreach ($products as $product)
-      <div class="card dinsten border-0 m-0 col-xl-3 col-lg-4 col-md-6 {{$product->name}} {{$product->category}} {{$product->tags}} " data-name="{{$product->name}}">
-        <div class="front" style="background-image: url('{{$product->src_img}}');">
-          <div class="title-front-card">
-            <h5>{{ucfirst($product->name)}}</h5>
-          </div>
-        </div>
-        <div class="back">
-          <span>
-            <h1>{{ucfirst($product->name)}}</h1>
-            {{$product->description}}
-            <ul>
-              <li>
-                <a href="/members" class="btn btn-success">Verder</a>
-              </li>
-            </ul>
-          </span>
-        </div>
-      </div>
+
       @endforeach
     </div>
   </div>
