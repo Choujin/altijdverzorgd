@@ -140,7 +140,17 @@ section:first-of-type{
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
-  height: 500px;
+  height: 550px;
+}
+.error-message-bg {
+  background-image: url("../images/altijdverzorgd-errormessage-bg.jpg");
+  background-repeat: no-repeat;
+  /* background-attaQzchment: fixed; */
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 550px;
 }
  @media all and (max-width: 1199px) {
    .page1-1 {

@@ -3,8 +3,21 @@
 <body id="app">
 @include('components.headers.header')
 
+<section class="error-message-bg pb-5">
+        <div class="container h-100">
+                <div class="row align-items-center h-100">
+                    <div class="col-12 mx-auto">
+                        <div class="text-center text-white">
+                                <h1>Oops...</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</section>
 
-<section class="container text-center">
+
+
+<section class="container text-center align-items-center pb-4">
 
     <div class="col-md-12 col-md-offset-3 pt-5" id="form_container">
         <h2>Meld hier uw fout</h2>
@@ -12,32 +25,32 @@
 
             Stuur hieronder uw bericht. We nemen zo snel mogelijk contact met u op!
         </p>
+        
         <form role="form" method="post" id="reused_form">
-
-            <div class="row">
-                <div class="col-sm-12 form-group">
-                    <label for="message">
-                        Bericht:</label>
-                    <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 form-group">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 form-group">
                     <label for="name">
-                        Je Naam:</label>
+                        Voor- en achternaam</label>
                     <input type="text" class="form-control" id="name" name="name" required>
                 </div>
-                <div class="col-sm-6 form-group">
+                <div class="col-sm-4 form-group">
                     <label for="email">
-                        Email:</label>
+                        E-mail</label>
                     <input type="email" class="form-control" id="email" name="email" required>
                 </div>
             </div>
+            <div class="row justify-content-center">
+                    <div class="col-sm-8 form-group">
+                        <label for="message">
+                            Beschrijving van de fout</label>
+                        <textarea class="form-control" type="textarea" id="message" name="message" maxlength="6000" rows="7"></textarea>
+                    </div>
+                </div>
 
 
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-sm-12 form-group">
-                    <button type="submit" class="btn btn-lg btn-default pull-right" >Verzenden →</button>
+                    <button type="submit" class="btn btn-lg btn-green" >Verzenden</button>
                 </div>
             </div>
 
