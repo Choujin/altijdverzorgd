@@ -419,11 +419,7 @@ body.sidebar-toggled footer.sticky-footer {
                         <span>Ervaringen</span></a>
                     </li>
                   </ul>
-<<<<<<< HEAD
         <div class="container-fluid">
-=======
-        <div class="container-fluid no-padding">
->>>>>>> 5cb13531a7e7c760750373dc15bef004fd97e0df
                 @yield('content')
         </div>
     </div>

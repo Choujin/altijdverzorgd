@@ -145,10 +145,4 @@
 
         </div>
     </section>
-
-@include('components.scripts')
 @endsection
-
-
-
-
