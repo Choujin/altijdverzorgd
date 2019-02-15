@@ -18,4 +18,10 @@ Route::group(['namespace' => 'Member'], function() {
     Route::get('password/reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('member.password.request');
     Route::get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('member.password.reset');
 
+    // dashboard
+    //profile page
+    Route::get('edit', 'MemberProfileController@edit')->name('member.edit');
+
+
+
 });

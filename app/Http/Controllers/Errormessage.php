@@ -2,6 +2,7 @@
 namespace App\Http\Controllers;
 
 use App\Members;
+use Illuminate\Http\Request;
 
 class errormessage extends Controller
 {
@@ -13,4 +14,6 @@ class errormessage extends Controller
 
       return view('errormessage', $data);
     }
+    
 }
+

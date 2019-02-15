@@ -10,13 +10,5 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', 'HomePageController@startpage');
-Route::post('/', 'HomePageController@SearchForm');
-
-Route::get('/products', 'ProductsController@ProductsList');
-Route::get('/business-info','BusinessInfo@startpage');
-Route::get('/members', 'MembersListController@memberlistsearch');
-
-Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/errormessage','Errormessage@startpage');
+Auth::routes(['verify' => true]);
+Route::get('/home', 'HomeController@index')->middleware('verified');

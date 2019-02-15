@@ -335,14 +335,16 @@ body.sidebar-toggled footer.sticky-footer {
   body.sidebar-toggled footer.sticky-footer {
     width: calc(100% - 90px);
   }
-}</style>
+}
+
+</style>
 <body>
 
 
         <nav class="navbar navbar-expand navbar-dark bg-green static-top d-flex justify-content-between">
 
             <div>
-                <img href="#" data-src="https://www.altijdverzorgd.nl/test/assets/img/logo/mstile-144x144.png" alt="" width="27" height="27">Welkom</a>
+                <img href="#" data-src="https://www.altijdverzorgd.nl/test/assets/img/logo/mstile-144x144.png" alt="" width="27" height="27"></a>
 
 
 
@@ -396,36 +398,32 @@ body.sidebar-toggled footer.sticky-footer {
               <div id="wrapper">
               <ul class="sidebar navbar-nav">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">
+                      <a class="nav-link" href="{{ route('member.dashboard') }}">
                         <i class="fas fa-fw fa-tachometer-alt"></i>
                         <span>Dashboard</span>
                       </a>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-fw fa-folder"></i>
-                        <span>Profiel</span>
-                      </a>
-                      <div class="dropdown-menu" aria-labelledby="pagesDropdown">
-                        <h6 class="dropdown-header">Wijzigen:</h6>
-                        <a class="dropdown-item" href="#">Persoons gegevens</a>
-                        <a class="dropdown-item" href="#">Wachtwoord</a>
-                        <a class="dropdown-item" href="#">E-mail</a>
-                        <div class="dropdown-divider"></div>
-                      </div>
-                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{{ route('member.edit') }}">
+                            <i class="fas fa-user"></i>
+                          <span>Profiel</span></a>
+                      </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="charts.html">
-                        <i class="fas fa-fw fa-chart-area"></i>
-                        <span>Ervaringen</span></a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="tables.html">
-                        <i class="fas fa-fw fa-table"></i>
+                      <a class="nav-link" href="#">
+                        <i class="fas fa-calendar-alt"></i>
                         <span>Agenda</span></a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <i class="fas fa-network-wired"></i>
+                        <span>Ervaringen</span></a>
+                    </li>
                   </ul>
-        <div class="content-wrapper">
+<<<<<<< HEAD
+        <div class="container-fluid">
+=======
+        <div class="container-fluid no-padding">
+>>>>>>> 5cb13531a7e7c760750373dc15bef004fd97e0df
                 @yield('content')
         </div>
     </div>

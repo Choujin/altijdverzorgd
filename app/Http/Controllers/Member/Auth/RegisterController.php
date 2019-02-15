@@ -78,6 +78,7 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
             'work_location' => $data['work_location'],
             'specialisation' => $data['specialisation'],
+            'ip_address' => request()->ip(),
         ]);
     }
 

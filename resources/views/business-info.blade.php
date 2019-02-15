@@ -90,13 +90,11 @@
 
             <form id="form-business" class="form-signin pl-5 ml-5 bg-white rounded" method="POST" action="{{ route('member.register') }}" aria-label="{{ __('Register') }}">
                 @csrf
-
                 <div class="form-group row">
                     <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Voornaam') }}</label>
 
                     <div class="col-3">
-                        <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
-                            name="name" value="{{ old('name') }}" required>
+                        <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required>
 
                         @if ($errors->has('name'))
                         <span class="invalid-feedback" role="alert">
@@ -109,8 +107,7 @@
                     <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Achternaam') }}</label>
 
                     <div class="col-3">
-                        <input id="surname" type="text" class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}"
-                            name="surname" value="{{ old('surname') }}" required>
+                        <input id="surname" type="text" class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}" name="surname" value="{{ old('surname') }}" required>
 
                         @if ($errors->has('surname'))
                         <span class="invalid-feedback" role="alert">
@@ -125,11 +122,11 @@
 
                     <div class="col-3 row d-flex justify-content-around ml-0">
                         <div class="custom-control custom-radio">
-                            <input id="customRadio1" type="radio" name="gender" value="men" class="custom-control-input">
+                            <input id="customRadio1" type="radio" name="gender" value="male" class="custom-control-input">
                             <label class="custom-control-label" for="customRadio1">Man</label>
                         </div>
                         <div class="custom-control custom-radio">
-                            <input id="customRadio2" type="radio" name="gender" value="women" class="custom-control-input">
+                            <input id="customRadio2" type="radio" name="gender" value="female" class="custom-control-input">
                             <label class="custom-control-label" for="customRadio2">Vrouw</label>
                         </div>
                         @if ($errors->has('surname'))
@@ -144,8 +141,7 @@
                     <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail') }}</label>
 
                     <div class="col-3">
-                        <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
-                            name="email" value="{{ old('email') }}" required>
+                        <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
 
                         @if ($errors->has('email'))
                         <span class="invalid-feedback" role="alert">
@@ -159,8 +155,7 @@
                     <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Wachtwoord') }}</label>
 
                     <div class="col-3">
-                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                            name="password" required>
+                        <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
 
                         @if ($errors->has('password'))
                         <span class="invalid-feedback" role="alert">
@@ -174,8 +169,7 @@
                     <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Wachtwoord bevestigen') }}</label>
 
                     <div class="col-3">
-                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
-                            required>
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                     </div>
                 </div>
                 <div class="form-group row">
@@ -186,8 +180,7 @@
                     </div>
                 </div>
                 <div class="form-group row">
-                    <label for="specialisation" class="col-md-4 col-form-label text-md-right">{{ __('Specialisatie')
-                        }}</label>
+                    <label for="specialisation" class="col-md-4 col-form-label text-md-right">{{ __('Specialisatie') }}</label>
 
                     <div class="col-3">
                         <input id="specialisation" type="text" class="form-control" name="specialisation" required>
@@ -209,7 +202,7 @@
                         </button>
                     </div>
                 </div>
-                
+
             </form>
 
         </div>

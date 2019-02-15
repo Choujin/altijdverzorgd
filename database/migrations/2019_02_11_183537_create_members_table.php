@@ -21,13 +21,14 @@ class CreateMembersTable extends Migration
           $table->string('email')->unique();
           $table->timestamp('email_verified_at')->nullable();
           $table->string('password');
-          $table->string('profile_link')->default('blabla');
+          $table->string('profile_link')->default('default_link');
           $table->string('src_img')->default('default-profile.png');
           $table->string('specialisation');
           $table->string('work_location');
           $table->integer('digit')->default('0');
           $table->integer('likes')->default('0');
           $table->integer('comments')->default('0');
+          $table->ipAddress('ip_address');
           $table->rememberToken();
           $table->timestamps();
         });

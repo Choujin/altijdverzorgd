@@ -45,9 +45,15 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->mapMemberRoutes();
 
+        $this->mapUserRoutes();
+
+        $this->mapOrderRoutes();
+
+        $this->mapPagesRoutes();
+
         //
-    }    
-    
+    }
+
     /**
      * Define the "member" routes for the application.
      *
@@ -61,8 +67,8 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware(['web'])
              ->namespace($this->namespace)
              ->group(base_path('routes/member.php'));
-    }    
-    
+    }
+
     /**
      * Define the "student" routes for the application.
      *
@@ -76,8 +82,8 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware(['web'])
              ->namespace($this->namespace)
              ->group(base_path('routes/student.php'));
-    }    
-    
+    }
+
     /**
      * Define the "municipality" routes for the application.
      *
@@ -92,11 +98,6 @@ class RouteServiceProvider extends ServiceProvider
              ->namespace($this->namespace)
              ->group(base_path('routes/municipality.php'));
     }
-
-
-
-
-
 
 
     /**
@@ -126,5 +127,45 @@ class RouteServiceProvider extends ServiceProvider
              ->middleware('api')
              ->namespace($this->namespace)
              ->group(base_path('routes/api.php'));
+    }
+    /**
+     * Define the "municipality" routes for the application.
+     *
+     * These routes are typically stateless.
+     *
+     * @return void
+     */
+    protected function mapUserRoutes()
+    {
+        Route::prefix('user')
+             ->middleware(['web'])
+             ->namespace($this->namespace)
+             ->group(base_path('routes/user.php'));
+    }
+    /**
+     * Define the "web" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapOrderRoutes()
+    {
+        Route::middleware('web')
+             ->namespace($this->namespace)
+             ->group(base_path('routes/order.php'));
+    }
+    /**
+     * Define the "web" routes for the application.
+     *
+     * These routes all receive session state, CSRF protection, etc.
+     *
+     * @return void
+     */
+    protected function mapPagesRoutes()
+    {
+        Route::middleware('web')
+             ->namespace($this->namespace)
+             ->group(base_path('routes/pages.php'));
     }
 }

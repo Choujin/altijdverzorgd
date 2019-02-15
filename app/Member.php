@@ -2,9 +2,11 @@
 
 namespace App;
 
+
 use App\Notifications\Member\MemberResetPassword;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+
 
 class Member extends Authenticatable
 {
@@ -16,7 +18,7 @@ class Member extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'surname', 'gender', 'email', 'password', 'work_location', 'specialisation',
+        'name', 'surname', 'gender', 'email', 'password', 'work_location', 'specialisation', 'ip_address',
     ];
 
     /**

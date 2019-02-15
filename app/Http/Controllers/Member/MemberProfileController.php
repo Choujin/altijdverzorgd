@@ -4,10 +4,10 @@ namespace App\Http\Controllers\Member;
 
 use App\Http\Controllers\Controller;
 
-class HomeController extends Controller
+class MemberProfileController extends Controller
 {
 
-    protected $redirectTo = '/member/login';
+    protected $redirectTo = '/member/edit';
 
     /**
      * Create a new controller instance.
@@ -24,8 +24,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index() {
-        return view('member.home');
+    public function edit() {
+        return view('member.edit');
     }
 
 }

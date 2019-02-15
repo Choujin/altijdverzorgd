@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Members;
 
 class MembersListController extends Controller
 {
