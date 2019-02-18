@@ -13,7 +13,7 @@
 
         <div class="col-3">
             <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
-                name="name" value="{{ old('name') }}" required>
+                name="name" value="{{ $members->name }}" required>
 
             @if ($errors->has('name'))
             <span class="invalid-feedback" role="alert">
