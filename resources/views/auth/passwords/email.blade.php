@@ -12,7 +12,7 @@ body {
 
 .form-signin {
   width: 100%;
-  max-width: 500px;
+  max-width: 330px;
   padding: 15px;
   margin: auto;
 }
@@ -51,7 +51,7 @@ body {
 }
 </style>
 <body class="text-center">
-  <form class="form-signin bg-white rounded" method="POST" action="{{ route('password.email') }}" aria-label="{{ __('Reset Password') }}">
+  <form class="form-signin bg-white rounded" method="POST" action="{{ route('student.password.email') }}" aria-label="{{ __('Reset Password') }}">
     @csrf
     <a href="/">
       <img class="mb-4" data-src="https://www.altijdverzorgd.nl/test/assets/img/logo/android-chrome-512x512.png" alt="" width="72" height="72">
