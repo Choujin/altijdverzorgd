@@ -63,54 +63,9 @@ body {
       <a href="/">
         <img class="mb-4" data-src="https://www.altijdverzorgd.nl/test/assets/img/logo/android-chrome-512x512.png" alt="" width="72" height="72">
       </a>
-      <h1 class="h3 mb-3 font-weight-normal">Member registration</h1>
-      <div class="form-group row">
-          <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
-
-          <div class="col">
-              <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
-
-              @if ($errors->has('name'))
-                  <span class="invalid-feedback" role="alert">
-                      <strong>{{ $errors->first('name') }}</strong>
-                  </span>
-              @endif
-          </div>
-      </div>
-      <div class="form-group row">
-          <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Surname') }}</label>
-
-          <div class="col">
-              <input id="surname" type="text" class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}" name="surname" value="{{ old('surname') }}" required autofocus>
-
-              @if ($errors->has('surname'))
-                  <span class="invalid-feedback" role="alert">
-                      <strong>{{ $errors->first('surname') }}</strong>
-                  </span>
-              @endif
-          </div>
-      </div>
-
-      <div class="form-group row">
-          <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
-
-          <div class="col row d-flex justify-content-around ml-0">
-              <div class="custom-control custom-radio">
-                <input id="customRadio1" type="radio" name="gender" value="male" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio1">Men</label>
-              </div>
-              <div class="custom-control custom-radio">
-                <input id="customRadio2" type="radio" name="gender" value="female" class="custom-control-input">
-                <label class="custom-control-label" for="customRadio2">Women</label>
-              </div>
-              @if ($errors->has('surname'))
-                  <span class="invalid-feedback" role="alert">
-                      <strong>{{ $errors->first('surname') }}</strong>
-                  </span>
-              @endif
-          </div>
-      </div>
-
+      <h1 class="mb-3 font-weight-normal">Member registration</h1>
+<hr>
+<h3 class="font-weight-normal mb-3">Sign-in Information</h3>
       <div class="form-group row">
           <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
 
@@ -146,19 +101,99 @@ body {
               <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
           </div>
       </div>
+      <hr>
+      <h3 class="font-weight-normal mb-3">Personal Information</h3>
       <div class="form-group row">
-          <label for="work_location" class="col-md-4 col-form-label text-md-right">{{ __('Work location') }}</label>
+          <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
 
           <div class="col">
-              <input id="work_location" type="text" class="form-control" name="work_location" required>
+              <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required autofocus>
+
+              @if ($errors->has('name'))
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $errors->first('name') }}</strong>
+                  </span>
+              @endif
           </div>
       </div>
       <div class="form-group row">
-            <label for="specialisation" class="col-md-4 col-form-label text-md-right">{{ __('Specialisation') }}</label>
+          <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Surname') }}</label>
 
+          <div class="col">
+              <input id="surname" type="text" class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}" name="surname" value="{{ old('surname') }}" required autofocus>
+
+              @if ($errors->has('surname'))
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $errors->first('surname') }}</strong>
+                  </span>
+              @endif
+          </div>
+      </div>
+      <div class="form-group row">
+          <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Gender') }}</label>
+          <div class="col row d-flex justify-content-around ml-0">
+              <div class="custom-control custom-radio">
+                <input id="customRadio1" type="radio" name="gender" value="male" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio1">Men</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="customRadio2" type="radio" name="gender" value="female" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio2">Women</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="customRadio3" type="radio" name="gender" value="other" class="custom-control-input">
+                <label class="custom-control-label" for="customRadio3">Other</label>
+              </div>
+              @if ($errors->has('gender'))
+                  <span class="invalid-feedback" role="alert">
+                      <strong>{{ $errors->first('gender') }}</strong>
+                  </span>
+              @endif
+          </div>
+      </div>
+      <div class="form-group row">
+            <label for="telephone_number" class="col-md-4 col-form-label text-md-right">{{ __('Telephone number') }}</label>
+            <div class="col">
+                <input id="telephone_number" type="tel" class="form-control" name="telephone_number" required>
+            </div>
+            @if ($errors->has('telephone_number'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('telephone_number') }}</strong>
+                </span>
+            @endif
+      </div>
+      <div class="form-group row">
+            <label for="home_address" class="col-md-4 col-form-label text-md-right">{{ __('Home address') }}</label>
+            <div class="col">
+                <input id="home_address" type="text" class="form-control" name="home_address" required>
+            </div>
+            @if ($errors->has('home_address'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('home_address') }}</strong>
+                </span>
+            @endif
+      </div>
+      <div class="form-group row">
+          <label for="work_location" class="col-md-4 col-form-label text-md-right">{{ __('Work location') }}</label>
+          <div class="col">
+              <input id="work_location" type="text" class="form-control" name="work_location" required>
+          </div>
+          @if ($errors->has('work_location'))
+              <span class="invalid-feedback" role="alert">
+                  <strong>{{ $errors->first('work_location') }}</strong>
+              </span>
+          @endif
+      </div>
+      <div class="form-group row">
+            <label for="specialisation" class="col-md-4 col-form-label text-md-right">{{ __('Specialisation') }}</label>
             <div class="col">
                 <input id="specialisation" type="text" class="form-control" name="specialisation" required>
             </div>
+            @if ($errors->has('specialisation'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('specialisation') }}</strong>
+                </span>
+            @endif
       </div>
       <!-- <div class="form-group row">
           <label for="exampleFormControlSelect1" class="col-md-4 col-form-label text-md-right">{{ __('Specialisation') }}</label>
