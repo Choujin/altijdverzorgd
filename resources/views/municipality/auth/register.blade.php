@@ -108,11 +108,11 @@ body {
       </div>
 
       <div class="form-group row mb-0">
-        <div class="col ">
-          <button type="submit" class="btn btn-success btn-block">
-            {{ __('Send Password Reset Link') }}
-          </button>
-        </div>
+          <div class="col">
+              <button type="submit" class="btn btn-success btn-block">
+                  {{ __('Register') }}
+              </button>
+          </div>
       </div>
       <a class="btn btn-link" href="{{ route('municipality.login') }}">
           {{ __('Login') }}

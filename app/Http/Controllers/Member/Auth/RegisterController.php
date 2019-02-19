@@ -54,9 +54,11 @@ class RegisterController extends Controller
         return Validator::make($data, [
             'name' => 'required|max:255',
             'surname' => 'required|max:255',
-            'gender' => 'required|in:male,female',
+            'gender' => 'required|in:male,female,other',
             'email' => 'required|email|max:255|unique:members',
             'password' => 'required|min:6|confirmed',
+            'telephone_number' => 'required|max:255',
+            'home_address' => 'required|max:255',
             'work_location' => 'required|max:255',
             'specialisation' => 'required|max:255',
         ]);
@@ -76,6 +78,8 @@ class RegisterController extends Controller
             'gender' => $data['gender'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
+            'telephone_number' => $data['telephone_number'],
+            'home_address' => $data['home_address'],
             'work_location' => $data['work_location'],
             'specialisation' => $data['specialisation'],
             'ip_address' => request()->ip(),
@@ -102,8 +106,8 @@ class RegisterController extends Controller
         return Auth::guard('member');
     }
 
-    protected function registered(Request $request, $user) {
-      $user->notify(new UserRegisteredNotification($user));
-    }
+    // protected function registered(Request $request, $user) {
+    //   $user->notify(new UserRegisteredNotification($user));
+    // }
 
 }

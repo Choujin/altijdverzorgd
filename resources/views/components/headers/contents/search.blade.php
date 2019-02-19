@@ -26,7 +26,7 @@
                     <a class="list-group-item list-group-item-action  p-1" href="{{$memberinfo->profile_link}}">
                       <div class="d-flex">
                         <div class="thumbs">
-                          <img class="rounded-left" data-src="images/workers/{{$memberinfo->src_img}}" alt="{{$memberinfo->name}} {{$memberinfo->surname}}" />
+                          <img class="rounded-left" data-src="images/workers/{{$memberinfo->profile_img}}" alt="{{$memberinfo->name}} {{$memberinfo->surname}}" />
                         </div>
                         <div class="d-flex flex-column">
                           <span class="badge"><i class="fas fa-star"></i> {{$memberinfo->digit}}</span>
@@ -51,7 +51,7 @@
                     <a class="list-group-item list-group-item-action  p-1" href="{{$memberinfo->profile_link}}">
                       <div class="d-flex">
                         <div class="thumbs">
-                          <img class="rounded-left" data-src="images/workers/{{$memberinfo->src_img}}" alt="{{$memberinfo->name}} {{$memberinfo->surname}}" />
+                          <img class="rounded-left" data-src="images/workers/{{$memberinfo->profile_img}}" alt="{{$memberinfo->name}} {{$memberinfo->surname}}" />
                         </div>
                         <div class="d-flex flex-column">
                           <span class="badge"><i class="fas fa-star"></i> {{$memberinfo->digit}}</span>
@@ -76,7 +76,7 @@
                     <a class="list-group-item list-group-item-action  p-1" href="{{$memberinfo->profile_link}}">
                       <div class="d-flex">
                         <div class="thumbs">
-                          <img class="rounded-left" data-src="images/workers/{{$memberinfo->src_img}}" alt="{{$memberinfo->name}} {{$memberinfo->surname}}" />
+                          <img class="rounded-left" data-src="images/workers/{{$memberinfo->profile_img}}" alt="{{$memberinfo->name}} {{$memberinfo->surname}}" />
                         </div>
                         <div class="d-flex flex-column">
                           <span class="badge"><i class="fas fa-star"></i> {{$memberinfo->digit}}</span>

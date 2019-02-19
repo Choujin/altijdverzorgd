@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-4">
+                <div class="col-md-4">
                         <a href="#form-business"><button type="button" class="btn btn-success btn-lg auto mt-5">Ik wil een demo</button></a>
                 </div>
             </div>
@@ -83,7 +83,7 @@
         </div>
     </section>
 
-    <section class="text-center py-5">
+    {{-- <section class="text-center py-5">
         <div class="container">
             <h1 class="color-green display-5 pt-4"> Vul hieronder het aanmeldingsformulier in</h1>
             <p class="display-6 py-4 text-dark">Vul het onderstaande formulier in, zodat we zo spoedig mogelijk contact met u kunnen opnemen! </p>
@@ -185,7 +185,7 @@
                     <div class="col-3">
                         <input id="specialisation" type="text" class="form-control" name="specialisation" required>
                     </div>
-                </div>
+                </div> --}}
                 <!-- <div class="form-group row">
                   <label for="exampleFormControlSelect1" class="col-md-4 col-form-label text-md-right">{{ __('Specialisation') }}</label>
                   <select class="form-control col" id="specialisation" required>
@@ -195,13 +195,135 @@
                     <option>Pedicure</option>
                   </select>
               </div> -->
-                <div class="form-group row mb-0">
-                    <div class="col-3 offset-md-4">
-                        <button type="submit" class="btn btn-success btn-block">
-                            {{ __('Gegevens versturen') }}
-                        </button>
-                    </div>
-                </div>
+              <section class="container text-center align-items-center pb-4">
+
+                    <div class="col-md-12 col-md-offset-3 pt-5" id="form_container">
+                        <h1 class="text-green">Vraag hier een demo aan</h1>
+                        <p class="py-4">
+                            Stuur hieronder uw bericht. We nemen zo snel mogelijk contact met u op!
+                        </p>
+                        <form role="form" method="post" action="{{ route('member.register') }}" aria-label="{{ __('Register') }}" id="form-business">
+                            @csrf
+                            <div class="row justify-content-center">
+                                <div class="col-sm-4 form-group">
+                                    <label for="name">{{ __('Voornaam') }}</label>
+                                    <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}" name="name" value="{{ old('name') }}" required>
+                
+                                        @if ($errors->has('name'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('name') }}</strong>
+                                        </span>
+                                        @endif
+                                </div>
+                                <div class="col-sm-4 form-group">
+                                    <label for="name">{{ __('Achternaam') }}</label>
+                                    <input id="surname" type="text" class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}" name="surname" value="{{ old('surname') }}" required>
+                
+                                        @if ($errors->has('surname'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('surname') }}</strong>
+                                        </span>
+                                        @endif
+                                </div>
+                            </div>
+                
+                
+                            <div class="row justify-content-center">
+                                    <div class="col-sm-4 form-group">
+                                            <label for="name">{{ __('Geslacht') }}</label><br>
+                                            
+                                                    <div class="form-check form-check-inline px-2">
+                                                        <input id="customRadio1" type="radio" name="gender" value="male" class="form-check-input">
+                                                        <label class="form-check-label" for="customRadio1">Man</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input id="customRadio2" type="radio" name="gender" value="female" class="form-check-input">
+                                                        <label class="form-check-label" for="customRadio2">Vrouw</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                            <input id="customRadio3" type="radio" name="gender" value="female" class="form-check-input">
+                                                            <label class="form-check-label" for="customRadio3">Other</label>
+                                                        </div>
+                                                    @if ($errors->has('surname'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('surname') }}</strong>
+                                                    </span>
+                                                    @endif
+                                             
+                                    </div>
+                                    <div class="col-sm-4 form-group">
+                                        <label for="email">{{ __('E-Mail') }}</label>
+                                        <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required>
+                
+                                        @if ($errors->has('email'))
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $errors->first('email') }}</strong>
+                                        </span>
+                                        @endif
+                                    </div>
+                                </div>
+                
+                
+                                <div class="row justify-content-center">
+                                        <div class="col-sm-4 form-group">
+                                            <label for="name">{{ __('Wachtwoord') }}</label>
+                                            <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" required>
+                
+                                            @if ($errors->has('password'))
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $errors->first('password') }}</strong>
+                                                </span>
+                                            @endif
+                                        </div>
+                                        <div class="col-sm-4 form-group">
+                                            <label for="password-confirm">{{ __('Wachtwoord bevestigen') }}</label>
+                                            <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
+                        
+                                        </div>
+                                </div>
+
+                                <div class="row justify-content-center">
+                                        <div class="col-sm-4 form-group">
+                                                <label for="telephone_number">{{ __('Telefoon nummer') }}</label>
+                                                <input id="telephone_number" type="tel" class="form-control" name="telephone_number" required>
+                                                
+                                                @if ($errors->has('telephone_number'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('telephone_number') }}</strong>
+                                                    </span>
+                                                @endif
+                                        </div>
+                                        <div class="col-sm-4 form-group">
+                                                <label for="home_address">{{ __('Adres') }}</label>
+                                                <input id="home_address" type="text" class="form-control" name="home_address" required>
+                                                
+                                                @if ($errors->has('home_address'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('home_address') }}</strong>
+                                                    </span>
+                                                @endif
+                                        </div>
+                                </div>
+                
+                
+                                <div class="row justify-content-center">
+                                        <div class="col-sm-4 form-group">
+                                            <label for="work_location">{{ __('Woonplaats') }}</label>
+                                            <input id="work_location" type="text" class="form-control" name="work_location" required>
+                                        </div>
+                                        <div class="col-sm-4 form-group">
+                                            <label for="specialisation">{{ __('Specialisatie') }}</label>
+                                            <input id="specialisation" type="text" class="form-control" name="specialisation" required>
+                                        </div>
+                                </div>
+
+                                <div class="row justify-content-center">
+                                        <div class="col-md-4 form-group py-4">
+                                            <button type="submit" class="btn btn-success btn-block">
+                                                {{ __('Gegevens versturen') }}
+                                            </button>
+                                        </div>
+                                    </div>
 
             </form>
 

@@ -108,18 +108,19 @@ body {
       </div>
 
       <div class="form-group row mb-0">
-        <div class="col ">
-          <button type="submit" class="btn btn-success btn-block">
-            {{ __('Send Password Reset Link') }}
-          </button>
-        </div>
+          <div class="col">
+              <button type="submit" class="btn btn-success btn-block">
+                  {{ __('Register') }}
+              </button>
+          </div>
       </div>
-      <a class="btn btn-link" href="{{ route('municipality.login') }}">
+      </div>
+      <a class="btn btn-link" href="{{ route('student.login') }}">
           {{ __('Login') }}
       </a>
       /
-      <a class="btn btn-link" href="{{ route('municipality.register') }}">
-          {{ __('Register') }}
+      <a class="btn btn-link" href="{{ route('student.password.request') }}">
+          {{ __('Forgot Your Password?') }}
       </a>
       <p class="mt-2 mb-0 text-muted">&copy;2019 Altijdverzorgd.nl</p>
   </form>

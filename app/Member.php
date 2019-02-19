@@ -5,10 +5,11 @@ namespace App;
 
 use App\Notifications\Member\MemberResetPassword;
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
 
-class Member extends Authenticatable
+class Member extends Authenticatable implements MustVerifyEmail
 {
     use Notifiable;
 
@@ -18,7 +19,7 @@ class Member extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'surname', 'gender', 'email', 'password', 'work_location', 'specialisation', 'ip_address',
+        'name', 'surname', 'gender', 'email', 'password', 'home_address', 'telephone_number', 'work_location', 'specialisation', 'ip_address',
     ];
 
     /**
