@@ -21,7 +21,8 @@
         <p>
             Stuur hieronder uw bericht. We nemen zo snel mogelijk contact met u op!
         </p>
-        <form role="form" method="post" id="reused_form">
+        <form role="form" method="post" action="errormessage" id="reused_form">
+            @csrf
             <div class="row justify-content-center">
                 <div class="col-sm-4 form-group">
                     <label for="name">
