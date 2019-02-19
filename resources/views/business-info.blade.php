@@ -240,6 +240,10 @@
                                                         <input id="customRadio2" type="radio" name="gender" value="female" class="form-check-input">
                                                         <label class="form-check-label" for="customRadio2">Vrouw</label>
                                                     </div>
+                                                    <div class="form-check form-check-inline">
+                                                            <input id="customRadio3" type="radio" name="gender" value="female" class="form-check-input">
+                                                            <label class="form-check-label" for="customRadio3">Other</label>
+                                                        </div>
                                                     @if ($errors->has('surname'))
                                                     <span class="invalid-feedback" role="alert">
                                                         <strong>{{ $errors->first('surname') }}</strong>
@@ -275,6 +279,29 @@
                                             <label for="password-confirm">{{ __('Wachtwoord bevestigen') }}</label>
                                             <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                         
+                                        </div>
+                                </div>
+
+                                <div class="row justify-content-center">
+                                        <div class="col-sm-4 form-group">
+                                                <label for="telephone_number">{{ __('Telefoon nummer') }}</label>
+                                                <input id="telephone_number" type="tel" class="form-control" name="telephone_number" required>
+                                                
+                                                @if ($errors->has('telephone_number'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('telephone_number') }}</strong>
+                                                    </span>
+                                                @endif
+                                        </div>
+                                        <div class="col-sm-4 form-group">
+                                                <label for="home_address">{{ __('Adres') }}</label>
+                                                <input id="home_address" type="text" class="form-control" name="home_address" required>
+                                                
+                                                @if ($errors->has('home_address'))
+                                                    <span class="invalid-feedback" role="alert">
+                                                        <strong>{{ $errors->first('home_address') }}</strong>
+                                                    </span>
+                                                @endif
                                         </div>
                                 </div>
                 
