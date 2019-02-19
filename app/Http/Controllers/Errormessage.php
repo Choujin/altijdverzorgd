@@ -14,7 +14,7 @@
 
 //       return view('errormessage', $data);
 //     }
-    
+
 // }
 
 
@@ -38,9 +38,9 @@ class Errormessage extends Controller
     }
 
     public function mail(ErrorMessageRequest $request)
-    {	
+    {
 
-    	Mail::to('errormessage@altijdverzorgd')->send(new ContactErrorMessageRequest($request));
+    	Mail::to('error@altijdverzorgd.nl')->send(new ContactErrorMessageRequest($request));
 
     	return redirect()->back()->with('status', 'Your message has been received');
     }
