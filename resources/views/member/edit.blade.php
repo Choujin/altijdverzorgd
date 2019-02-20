@@ -11,9 +11,10 @@
     <div class="form-group row">
         <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Voornaam') }}</label>
 
+
         <div class="col-3">
             <input id="name" type="text" class="form-control{{ $errors->has('name') ? ' is-invalid' : '' }}"
-                name="name" value="{{ old('name') }}" required>
+                name="v_name" value="{{ old('name') }}">
 
             @if ($errors->has('name'))
             <span class="invalid-feedback" role="alert">
@@ -27,7 +28,7 @@
 
         <div class="col-3">
             <input id="surname" type="text" class="form-control{{ $errors->has('surname') ? ' is-invalid' : '' }}"
-                name="surname" value="{{ old('surname') }}" required>
+                name="a_surname" value="{{ old('surname') }}">
 
             @if ($errors->has('surname'))
             <span class="invalid-feedback" role="alert">
@@ -41,15 +42,23 @@
         <label for="work_location" class="col-4 col-form-label text-md-right">{{ __('Adres') }}</label>
 
         <div class="col-3">
-            <input id="work_location" type="text" class="form-control" name="work_location" required>
+            <input id="work_location" type="text" class="form-control" name="work_location">
         </div>
     </div>
+
+    <div class="form-group row">
+            <label for="example-text-input" class="col-4 col-form-label text-md-right">Werklocaties</label>
+            <div class="col-3">
+            <input class="form-control" type="text" value="Bijv, Enschede" id="example-text-input">
+            </div>
+          </div>
+
     <div class="form-group row">
         <label for="specialisation" class="col-md-4 col-form-label text-md-right">{{ __('Telefoon nummer')
             }}</label>
 
         <div class="col-3">
-            <input id="specialisation" type="text" class="form-control" name="specialisation" required>
+            <input id="specialisation" type="text" class="form-control" name="specialisation">
         </div>
     </div>
 
@@ -74,7 +83,7 @@
 
         <div class="col-3">
             <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
-                name="email" value="{{ old('email') }}" required>
+                name="o_email" value="{{ old('email') }}">
 
             @if ($errors->has('email'))
             <span class="invalid-feedback" role="alert">
@@ -88,7 +97,7 @@
 
             <div class="col-3">
                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}"
-                    name="email" value="{{ old('email') }}" required>
+                    name="n_email" value="{{ old('email') }}">
 
                 @if ($errors->has('email'))
                 <span class="invalid-feedback" role="alert">
@@ -116,7 +125,7 @@
 
             <div class="col-3">
                 <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
-                    name="password" required>
+                    name="o_password">
 
                 @if ($errors->has('password'))
                 <span class="invalid-feedback" role="alert">
@@ -126,12 +135,29 @@
             </div>
         </div>
 
+        <form id="form-edit" class="form-edit pl-5 ml-5 bg-white rounded" method="POST" action="{{ route('member.edit') }}" aria-label="{{ __('Edit') }}">
+                @csrf
+
+                <div class="form-group row">
+                        <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Je nieuwe wachtwoord') }}</label>
+
+                        <div class="col-3">
+                            <input id="password" type="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}"
+                                name="n_password">
+
+                            @if ($errors->has('password'))
+                            <span class="invalid-feedback" role="alert">
+                                <strong>{{ $errors->first('password') }}</strong>
+                            </span>
+                            @endif
+                        </div>
+                    </div>
+
         <div class="form-group row">
             <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Nieuwe wachtwoord bevestigen') }}</label>
 
             <div class="col-3">
-                <input id="password-confirm" type="password" class="form-control" name="password_confirmation"
-                    required>
+                <input id="password-confirm" type="password" class="form-control" name="password_confirmation">
             </div>
         </div>
         <div class="form-group row mb-0">
@@ -143,6 +169,14 @@
                 </div>
             </div>
 
+
+
         </div>
     </section>
+
 @endsection
+
+
+
+
+

@@ -23,6 +23,9 @@
   width: 20px;
 }
 
+
+
+
 </style>
 
 @section('content')
@@ -70,7 +73,7 @@
 </div>
 <div class="row justify-content-between">
   <div class="col-sm-5">
-    <img data-src="/images/avatar/agenda.jpeg" alt="">
+
   </div>
   <div class="col-sm-5 ">
   <hr>

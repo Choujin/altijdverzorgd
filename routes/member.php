@@ -24,6 +24,7 @@ Route::group(['namespace' => 'Member'], function() {
 
     // dashboard
     //profile page
+    Route::post('edit', 'MemberProfileController@edit')->name('member.edit');
     Route::get('edit', 'MemberProfileController@edit')->name('member.edit');
 
 
