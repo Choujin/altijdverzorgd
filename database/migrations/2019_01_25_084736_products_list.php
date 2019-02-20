@@ -17,7 +17,7 @@ class ProductsList extends Migration
         $table->increments('id');
         $table->string('name');
         $table->string('city');
-        $table->string('select');
+        $table->string('gender');
         $table->string('category');
         $table->string('description');
         $table->string('tags');
