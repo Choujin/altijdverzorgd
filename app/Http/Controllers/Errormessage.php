@@ -13,7 +13,7 @@ class Errormessage extends Controller
 {
     public function show()
     {
-        $memberinfos = Members::all();
+        $memberinfos = Member::all();
         return view('errormessage', compact('memberinfos'));
     }
 
