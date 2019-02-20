@@ -12,7 +12,7 @@ class ProductsController extends Controller
     public function ProductsList()
     {
       $data = array(
-          'memberinfos'  => Members::all(),
+          'memberinfos'  => Member::all(),
           'products' => Products::all(),
       );
 
