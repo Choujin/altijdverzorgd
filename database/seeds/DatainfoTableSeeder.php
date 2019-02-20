@@ -14,27 +14,27 @@ class DatainfoTableSeeder extends Seeder
       $datainfos = [
           [
             'title' => 'Geregistreerde zaken',
-            'totaal' => '5468',
+            'totaal' => '0',
             'fas' => 'fas fa-building',
           ],
           [
             'title' => 'Specialisten te boeken',
-            'totaal' => '12939',
+            'totaal' => '8',
             'fas' => 'fas fa-users',
           ],
           [
             'title' => 'Diensten te boeken',
-            'totaal' => '1532',
+            'totaal' => '6',
             'fas' => 'fas fa-wrench',
           ],
           [
             'title' => 'Betrouwbare reviews',
-            'totaal' => '412368',
+            'totaal' => '0',
             'fas' => 'fas fa-comments',
           ],
           [
             'title' => 'Afspraken gemaakt',
-            'totaal' => '45646512',
+            'totaal' => '0',
             'fas' => 'fas fa-calendar-alt',
           ],
       ];
