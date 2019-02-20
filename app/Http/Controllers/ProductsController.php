@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Members;
+use App\Member;
 use App\Products;
 
 use Illuminate\Http\Request;

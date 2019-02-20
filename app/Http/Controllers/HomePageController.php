@@ -1,7 +1,7 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Members;
+use App\Member;
 use App\DataInfo;
 
 class HomePageController extends Controller
@@ -9,7 +9,7 @@ class HomePageController extends Controller
     public function startpage()
     {
         $data = array(
-          'memberinfos'  => Members::all(),
+          'memberinfos'  => Member::all(),
           'datainfos' => DataInfo::all(),
       );
 
@@ -17,6 +17,6 @@ class HomePageController extends Controller
     }
     public function SearchForm()
     {
-        
+
     }
 }
