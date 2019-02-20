@@ -4,6 +4,7 @@ namespace App;
 
 
 use App\Notifications\Member\MemberResetPassword;
+use Illuminate\Database\Eloquent\Model;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;

@@ -1,14 +1,14 @@
 <?php
 namespace App\Http\Controllers;
 
-use App\Members;
+use App\Member;
 
 class BusinessInfo extends Controller
 {
     public function startpage()
     {
       $data = array(
-          'memberinfos'  => Members::all()
+          'memberinfos'  => Member::all()
       );
 
       return view('business-info', $data);
