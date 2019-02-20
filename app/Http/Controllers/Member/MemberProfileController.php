@@ -16,7 +16,7 @@ class MemberProfileController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('member.auth:member');    
+        $this->middleware('member.auth:member');
     }
 
     /**
@@ -24,9 +24,14 @@ class MemberProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function edit() 
+    public function edit()
     {
         return view('member.edit');
+    }
+
+    public function showChangePasswordForm()
+    {
+        return view('auth.changepassword');
     }
 
 }
