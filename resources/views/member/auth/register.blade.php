@@ -235,7 +235,7 @@ body {
             </div>
             @if ($errors->has('profession'))
                 <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('specialisatprofessionion') }}</strong>
+                    <strong>{{ $errors->first('profession') }}</strong>
                 </span>
             @endif
       </div>
