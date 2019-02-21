@@ -27,7 +27,7 @@
                 Stuur hieronder uw bericht. We nemen zo snel mogelijk contact met jouw aanbeveling persoon op!
             </p>
 
-            <form role="form" method="post" action="errormessage" id="reused_form">
+            <form role="form" method="post" action="persoonaanbevelen" id="reused_form">
                 @csrf
                 <div class="row justify-content-center">
                     <div class="col-sm-8 col-md-6 col-lg-4 form-group">
