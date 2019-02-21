@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests\ErrorPersoonaanbevelen;
+use App\Http\Requests\PersoonaanbevelenRequest;
 
 use Mail;
 use App\Member;
