@@ -55,12 +55,16 @@ class RegisterController extends Controller
             'name' => 'required|max:255',
             'surname' => 'required|max:255',
             'gender' => 'required|in:male,female,other',
+            'birthday' => 'required|max:255',
             'email' => 'required|email|max:255|unique:members',
             'password' => 'required|min:6|confirmed',
             'telephone_number' => 'required|max:255',
-            'home_address' => 'required|max:255',
+            'address' => 'required|max:255',
+            'city' => 'required|max:255',
+            'postel_code' => 'required|max:255',
+            'country' => 'required|max:255',
             'work_location' => 'required|max:255',
-            'specialisation' => 'required|max:255',
+            'profession' => 'required|max:255',
         ]);
     }
 
@@ -76,12 +80,16 @@ class RegisterController extends Controller
             'name' => $data['name'],
             'surname' => $data['surname'],
             'gender' => $data['gender'],
+            'birthday' => $data['birthday'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
             'telephone_number' => $data['telephone_number'],
-            'home_address' => $data['home_address'],
+            'address' => $data['address'],
+            'city' => $data['city'],
+            'postel_code' => $data['postel_code'],
+            'country' => $data['country'],
             'work_location' => $data['work_location'],
-            'specialisation' => $data['specialisation'],
+            'profession' => $data['profession'],
             'ip_address' => request()->ip(),
         ]);
     }

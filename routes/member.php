@@ -12,6 +12,10 @@ Route::group(['namespace' => 'Member'], function() {
     Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('member.register');
     Route::post('register', 'Auth\RegisterController@register');
 
+    Route::get('email/verify', 'Auth\VerificationController@show')->name('member.notice');
+    Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('member.verify');
+    Route::get('email/resend', 'Auth\VerificationController@resend')->name('member.resend');
+
     // Passwords
     Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('member.password.email');
     Route::post('password/reset', 'Auth\ResetPasswordController@reset');
@@ -20,7 +24,7 @@ Route::group(['namespace' => 'Member'], function() {
 
     // dashboard
     //profile page
-    Route::post('edit', 'MemberProfileController@edit')->name('member.edit');
+    Route::post('edit', 'MemberProfileController@showChangePasswordForm')->name('member.edit');
     Route::get('edit', 'MemberProfileController@edit')->name('member.edit');
 
 

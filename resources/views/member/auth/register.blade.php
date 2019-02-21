@@ -152,6 +152,17 @@ body {
           </div>
       </div>
       <div class="form-group row">
+            <label for="birthday" class="col-md-4 col-form-label text-md-right">{{ __('Birthday') }}</label>
+            <div class="col">
+                <input id="birthday" type="text" class="form-control" name="birthday" required>
+            </div>
+            @if ($errors->has('birthday'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('birthday') }}</strong>
+                </span>
+            @endif
+      </div>
+      <div class="form-group row">
             <label for="telephone_number" class="col-md-4 col-form-label text-md-right">{{ __('Telephone number') }}</label>
             <div class="col">
                 <input id="telephone_number" type="tel" class="form-control" name="telephone_number" required>
@@ -163,13 +174,46 @@ body {
             @endif
       </div>
       <div class="form-group row">
-            <label for="home_address" class="col-md-4 col-form-label text-md-right">{{ __('Home address') }}</label>
+            <label for="address" class="col-md-4 col-form-label text-md-right">{{ __('Address') }}</label>
             <div class="col">
-                <input id="home_address" type="text" class="form-control" name="home_address" required>
+                <input id="address" type="text" class="form-control" name="address" required>
             </div>
-            @if ($errors->has('home_address'))
+            @if ($errors->has('address'))
                 <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('home_address') }}</strong>
+                    <strong>{{ $errors->first('address') }}</strong>
+                </span>
+            @endif
+      </div>
+      <div class="form-group row">
+            <label for="city" class="col-md-4 col-form-label text-md-right">{{ __('City') }}</label>
+            <div class="col">
+                <input id="city" type="text" class="form-control" name="city" required>
+            </div>
+            @if ($errors->has('city'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('city') }}</strong>
+                </span>
+            @endif
+      </div>
+      <div class="form-group row">
+            <label for="postel_code" class="col-md-4 col-form-label text-md-right">{{ __('Postel code') }}</label>
+            <div class="col">
+                <input id="postel_code" type="text" class="form-control" name="postel_code" required>
+            </div>
+            @if ($errors->has('postel_code'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('postel_code') }}</strong>
+                </span>
+            @endif
+      </div>
+      <div class="form-group row">
+            <label for="country" class="col-md-4 col-form-label text-md-right">{{ __('Country') }}</label>
+            <div class="col">
+                <input id="country" type="text" class="form-control" name="country" required>
+            </div>
+            @if ($errors->has('country'))
+                <span class="invalid-feedback" role="alert">
+                    <strong>{{ $errors->first('country') }}</strong>
                 </span>
             @endif
       </div>
@@ -185,13 +229,13 @@ body {
           @endif
       </div>
       <div class="form-group row">
-            <label for="specialisation" class="col-md-4 col-form-label text-md-right">{{ __('Specialisation') }}</label>
+            <label for="profession" class="col-md-4 col-form-label text-md-right">{{ __('Profession') }}</label>
             <div class="col">
-                <input id="specialisation" type="text" class="form-control" name="specialisation" required>
+                <input id="profession" type="text" class="form-control" name="profession" required>
             </div>
-            @if ($errors->has('specialisation'))
+            @if ($errors->has('profession'))
                 <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('specialisation') }}</strong>
+                    <strong>{{ $errors->first('profession') }}</strong>
                 </span>
             @endif
       </div>
