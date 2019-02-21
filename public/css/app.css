@@ -11380,6 +11380,15 @@ section:first-of-type {
   height: 450px;
 }
 
+.persoonaanbevelen-bg {
+  background-image: url(/images/altijdverzorgd-persoonaanbevelen-bg.jpg?c5524052a4ab59c726c73aa6f886001b);
+  background-repeat: no-repeat;
+  /* background-attaQzchment: fixed; */
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+}
+
 @media all and (max-width: 1199px) {
   .page1-1 {
     background-image: url(/images/bg-lg.jpg?89dfb0ebd6eab9293abe47163b1d6a30);
