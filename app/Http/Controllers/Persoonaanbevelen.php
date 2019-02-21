@@ -1,6 +1,5 @@
 <?php
 
-
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
@@ -15,7 +14,7 @@ class Persoonaanbevelen extends Controller
 {
     public function show()
     {
-        $memberinfos = Member::all();
+        $memberinfos = Members::all();
         return view('persoonaanbevelen', compact('memberinfos'));
     }
 

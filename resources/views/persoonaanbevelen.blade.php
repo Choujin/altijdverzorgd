@@ -1,5 +1,5 @@
 @include ('components.head')
-@section('title','Altijd verzorgd | Fout melden')
+@section('title','Altijd verzorgd | Persoon aanbevelen')
 
 <body id="app">
     @include('components.headers.hpheader')
