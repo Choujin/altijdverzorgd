@@ -89,7 +89,7 @@ class RegisterController extends Controller
             'postel_code' => $data['postel_code'],
             'country' => $data['country'],
             'work_location' => $data['work_location'],
-            'profession' => $data['specialisation'],
+            'profession' => $data['profession'],
             'ip_address' => request()->ip(),
         ]);
     }
