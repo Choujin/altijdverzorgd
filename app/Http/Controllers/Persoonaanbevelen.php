@@ -14,7 +14,7 @@ class Persoonaanbevelen extends Controller
 {
     public function show()
     {
-        $memberinfos = Members::all();
+        $memberinfos = Member::all();
         return view('persoonaanbevelen', compact('memberinfos'));
     }
 
