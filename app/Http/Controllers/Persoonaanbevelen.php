@@ -8,14 +8,14 @@ use Illuminate\Http\Request;
 use App\Http\Requests\ErrorPersoonaanbevelen;
 
 use Mail;
-use App\Members;
+use App\Member;
 use App\Mail\ContactPersoonaanbevelenRequest;
 
 class Persoonaanbevelen extends Controller
 {
     public function show()
     {
-        $memberinfos = Members::all();
+        $memberinfos = Member::all();
         return view('persoonaanbevelen', compact('memberinfos'));
     }
 
