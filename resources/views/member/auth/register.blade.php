@@ -229,13 +229,13 @@ body {
           @endif
       </div>
       <div class="form-group row">
-            <label for="specialisation" class="col-md-4 col-form-label text-md-right">{{ __('Specialisation') }}</label>
+            <label for="profession" class="col-md-4 col-form-label text-md-right">{{ __('Profession') }}</label>
             <div class="col">
-                <input id="specialisation" type="text" class="form-control" name="specialisation" required>
+                <input id="profession" type="text" class="form-control" name="profession" required>
             </div>
-            @if ($errors->has('specialisation'))
+            @if ($errors->has('profession'))
                 <span class="invalid-feedback" role="alert">
-                    <strong>{{ $errors->first('specialisation') }}</strong>
+                    <strong>{{ $errors->first('specialisatprofessionion') }}</strong>
                 </span>
             @endif
       </div>
