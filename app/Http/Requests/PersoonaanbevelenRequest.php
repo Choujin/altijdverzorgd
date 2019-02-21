@@ -26,10 +26,10 @@ class PersoonaanbevelenRequest extends FormRequest
         return [
             'name' => 'required',
             'email' => 'required|email',
-            'name-reference' => 'required',
-            'email-reference' => 'required|email',
-            'profession-reference' => 'required',
-            'message' => 'required'
+            'message' => 'required',
+            'namereference' => 'required',
+            'emailreference' => 'required|email',
+            'profession' => 'required'
         ];
     }
 }

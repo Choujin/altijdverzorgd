@@ -82,7 +82,7 @@
         </p>
 
         <span class="request">
-            {{ $request->name-reference }}
+            {{ $request->namereference }}
         </span>
         
         <p>
@@ -91,7 +91,7 @@
             </strong>
         </p>
         <span class="request">
-            {{ $request->email-reference }} 
+            {{ $request->emailreference }} 
         </span>
         
         <p>
@@ -100,7 +100,7 @@
             </strong>
         </p>
         <span class="request">
-            {{ $request->profession-reference }} 
+            {{ $request->profession }} 
         </span>
         
     </div>
