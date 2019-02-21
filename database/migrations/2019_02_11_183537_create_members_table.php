@@ -24,7 +24,7 @@ class CreateMembersTable extends Migration
           $table->string('password');
           $table->string('profile_img')->default('images/workers/default-profile.png');
           $table->string('telephone_number')->default('06');
-          $table->string('specialisation');
+          $table->string('profession');
           $table->string('address');
           $table->string('city');
           $table->string('postel_code');
@@ -33,6 +33,7 @@ class CreateMembersTable extends Migration
           $table->integer('digit')->default('0');
           $table->integer('likes')->default('0');
           $table->integer('comments')->default('0');
+          $table->string('about_me')->default('Tell us about your self');
           $table->ipAddress('ip_address');
           $table->rememberToken();
           $table->timestamps();

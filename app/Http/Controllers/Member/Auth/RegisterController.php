@@ -64,7 +64,7 @@ class RegisterController extends Controller
             'postel_code' => 'required|max:255',
             'country' => 'required|max:255',
             'work_location' => 'required|max:255',
-            'specialisation' => 'required|max:255',
+            'profession' => 'required|max:255',
         ]);
     }
 
@@ -89,7 +89,7 @@ class RegisterController extends Controller
             'postel_code' => $data['postel_code'],
             'country' => $data['country'],
             'work_location' => $data['work_location'],
-            'specialisation' => $data['specialisation'],
+            'profession' => $data['specialisation'],
             'ip_address' => request()->ip(),
         ]);
     }
