@@ -3,11 +3,11 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Http\Requests\ErrorMessageRequest;
+use App\Http\Requests\KlachtindienenRequest;
 
 use Mail;
 use App\Member;
-use App\Mail\ContactErrorMessageRequest;
+use App\Mail\ContactKlachtindienenRequest;
 
 class Klachtindienen extends Controller
 {
@@ -17,10 +17,10 @@ class Klachtindienen extends Controller
         return view('klachtindienen', compact('memberinfos'));
     }
 
-    public function mail(ErrorMessageRequest $request)
+    public function mail(KlachtindienenRequest $request)
     {
 
-    	Mail::to('info@altijdverzorgd.nl')->send(new ContactErrorMessageRequest($request));
+    	Mail::to('info@altijdverzorgd.nl')->send(new ContactKlachtindienenRequest($request));
 
     	return redirect()->back()->with('status', 'Your message has been received');
     }

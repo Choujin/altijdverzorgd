@@ -11,15 +11,35 @@
         <div class="col-md-12 col-md-offset-3 pt-5" id="form_container">
 
             <h2>
-                Ik wil een klacht indienen
+                Klacht indienen
             </h2>
 
             <p>
-                Stuur hieronder uw bericht. We nemen zo snel mogelijk contact met jouw aanbeveling persoon op!
+                    Bent u niet tevreden over onze dienstverlening? Dat betreuren wij zeer. <br>
+                    Stuur hieronder uw bericht. We nemen zo snel mogelijk contact u op!
             </p>
 
-            <form role="form" method="post" action="persoonaanbevelen" id="reused_form">
+            <form role="form" method="post" action="klachtindienen" id="reused_form">
                 @csrf
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 col-md-6 col-lg-4 form-group">
+                        <label for="member">
+                            Naam van behandelaar*</label>
+                        <input type="text" class="form-control" id="member" name="member" required>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-sm-8 col-md-6 col-lg-4 form-group">
+
+                        <label for="message">
+                                Uw klacht*</label>
+                        <textarea style="resize: none;" class="form-control" type="textarea" id="message" name="message"
+                            maxlength="6000" rows="7"></textarea>
+
+                    </div>
+                </div>
+
                 <div class="row justify-content-center">
                     <div class="col-sm-8 col-md-6 col-lg-4 form-group">
                         <label for="name">
@@ -37,44 +57,16 @@
                 </div>
 
                 <div class="row justify-content-center">
-                    <div class="col-sm-8 col-md-6 col-lg-4 form-group">
-
-                        <label for="message">
-                            Je persoonlijke aanbeveling*</label>
-                        <textarea style="resize: none;" class="form-control" type="textarea" id="message" name="message"
-                            maxlength="6000" rows="7"></textarea>
-
+                        <div class="col-sm-8 col-md-6 col-lg-4 form-group">
+                            <label for="telephone_number">
+                                Je telefoonnummer*</label>
+                            <input type="tel" class="form-control" id="telephone_number" name="telephone_number" required>
+                        </div>
                     </div>
-                </div>
 
                 <div class="row justify-content-center">
                     <div class="col-sm-8 col-md-6 col-lg-4 form-group">
-                        <label for="namereference">
-                            Bij wie wil je ons aanbevelen?*</label>
-                        <input type="text" class="form-control" id="namereference" name="namereference" required>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-sm-8 col-md-6 col-lg-4 form-group">
-                        <label for="emailreference">
-                            Zijn of haar e-mailadres*</label>
-                        <input type="email" class="form-control" id="emailreference" name="emailreference" required>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-sm-8 col-md-6 col-lg-4 form-group">
-                        <label for="profession">
-                            Zijn of haar beroep*</label>
-                        <input type="text" class="form-control" id="profession" name="profession"
-                            required>
-                    </div>
-                </div>
-
-                <div class="row justify-content-center">
-                    <div class="col-sm-8 col-md-6 col-lg-4 form-group">
-                        <button type="submit" class="btn btn-lg btn-green">Stuur de aanbeveling!</button>
+                        <button type="submit" class="btn btn-lg btn-green">Klacht versturen</button>
                     </div>
                 </div>
 
