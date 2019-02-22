@@ -82,7 +82,7 @@
             </div>
         </div>
     </section>
-              </div> -->
+              </div>
               <section class="container text-center align-items-center pb-4">
 
                     <div class="col-md-12 col-md-offset-3 pt-5" id="form_container">

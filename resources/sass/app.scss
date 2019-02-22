@@ -162,6 +162,16 @@ section:first-of-type{
   background-size: cover;
   height: 450px;
 }
+.klachtindienen-bg {
+  background-image: url("../images/altijdverzorgd-klachtindienen-bg.jpg");
+  background-repeat: no-repeat;
+  /* background-attaQzchment: fixed; */
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  height: 450px;
+}
  @media all and (max-width: 1199px) {
    .page1-1 {
      background-image: url("../images/bg/bg-lg.jpg");

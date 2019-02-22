@@ -11389,6 +11389,15 @@ section:first-of-type {
   height: 450px;
 }
 
+.klachtindienen-bg {
+  background-image: url(/images/altijdverzorgd-klachtindienen-bg.jpg?06052eca9b8ea6109126c23dbe1042ef);
+  background-repeat: no-repeat;
+  /* background-attaQzchment: fixed; */
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+}
+
 @media all and (max-width: 1199px) {
   .page1-1 {
     background-image: url(/images/bg-lg.jpg?89dfb0ebd6eab9293abe47163b1d6a30);
