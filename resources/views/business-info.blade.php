@@ -312,7 +312,7 @@
                                             <input id="work_location" type="text" class="form-control" name="work_location" required>
                                         </div>
                                         <div class="col-sm-4 form-group">
-                                            <label for="specialisation">{{ __('Specialisatie') }}</label>
+                                            <label for="specialisation">{{ __('Beroep') }}</label>
                                             <input id="specialisation" type="text" class="form-control" name="specialisation" required>
                                         </div>
                                 </div>
