@@ -1,6 +1,6 @@
 <?php
 
-Route::group(['namespace' => 'Member'], function() {
+Route::group(['namespace' => 'Member', 'verify' => true], function() {
     Route::get('/', 'HomeController@index')->name('member.dashboard');
 
     // Login
@@ -12,9 +12,9 @@ Route::group(['namespace' => 'Member'], function() {
     Route::get('register', 'Auth\RegisterController@showRegistrationForm')->name('member.register');
     Route::post('register', 'Auth\RegisterController@register');
 
-    Route::get('email/verify', 'Auth\VerificationController@show')->name('member.notice');
-    Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('member.verify');
-    Route::get('email/resend', 'Auth\VerificationController@resend')->name('member.resend');
+    Route::get('email/verify', 'Auth\VerificationController@show')->name('verification.notice');
+    Route::get('email/verify/{id}', 'Auth\VerificationController@verify')->name('verification.verify');
+    Route::get('email/resend', 'Auth\VerificationController@resend')->name('verification.resend');
 
     // Passwords
     Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('member.password.email');
@@ -26,7 +26,4 @@ Route::group(['namespace' => 'Member'], function() {
     //profile page
     Route::post('edit', 'MemberProfileController@showChangePasswordForm')->name('member.edit');
     Route::get('edit', 'MemberProfileController@edit')->name('member.edit');
-
-
-
 });

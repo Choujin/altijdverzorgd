@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Member;
-use App\Products;
+use App\Service;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +13,7 @@ class ProductsController extends Controller
     {
       $data = array(
           'memberinfos'  => Member::all(),
-          'products' => Products::all(),
+          'products' => Service::all(),
       );
 
       return view('products', $data);

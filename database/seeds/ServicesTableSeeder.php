@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DienstenTableSeeder extends Seeder
+class ServicesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,7 @@ class DienstenTableSeeder extends Seeder
      */
     public function run()
     {
-      $diensten = [
+      $services = [
           [
             'name' => 'Haar knippen',
             'city' => 'enschede',
@@ -68,6 +68,6 @@ class DienstenTableSeeder extends Seeder
           ],
       ];
 
-      DB::table('products')->insert($diensten);
+      DB::table('services')->insert($services);
     }
 }
