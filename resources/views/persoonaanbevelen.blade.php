@@ -58,25 +58,25 @@
 
                 <div class="row justify-content-center">
                     <div class="col-sm-8 col-md-6 col-lg-4 form-group">
-                        <label for="name-reference">
+                        <label for="namereference">
                             Bij wie wil je ons aanbevelen?*</label>
-                        <input type="text" class="form-control" id="name-reference" name="name-reference" required>
+                        <input type="text" class="form-control" id="namereference" name="namereference" required>
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
                     <div class="col-sm-8 col-md-6 col-lg-4 form-group">
-                        <label for="email-reference">
+                        <label for="emailreference">
                             Zijn of haar e-mailadres*</label>
-                        <input type="email" class="form-control" id="email-reference" name="email-reference" required>
+                        <input type="email" class="form-control" id="emailreference" name="emailreference" required>
                     </div>
                 </div>
 
                 <div class="row justify-content-center">
                     <div class="col-sm-8 col-md-6 col-lg-4 form-group">
-                        <label for="profession-reference">
+                        <label for="profession">
                             Zijn of haar beroep*</label>
-                        <input type="text" class="form-control" id="profession-reference" name="profession-reference"
+                        <input type="text" class="form-control" id="profession" name="profession"
                             required>
                     </div>
                 </div>

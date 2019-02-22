@@ -1,4 +1,4 @@
-{{-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
@@ -105,18 +105,4 @@
         
     </div>
 </body>
-</html> --}}
-
-<h1>aanbeveling form</h1>
-
-{{ $request->name }} <br><br>
-
-{{ $request->email }} <br><br>
-
-{{ $request->message }}  <br><br>
-
-{{ $request->namereference }} <br><br>
-
-{{ $request->emailreference }} <br><br>
-
-{{ $request->profession }}  <br><br>
+</html>
