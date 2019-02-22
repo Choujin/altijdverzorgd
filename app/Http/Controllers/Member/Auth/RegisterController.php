@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Member\Auth;
 
 use App\Member;
 use App\Http\Controllers\Controller;
-use App\Notifications\UserRegisteredNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
