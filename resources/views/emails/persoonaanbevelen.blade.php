@@ -13,8 +13,6 @@
             line-height: 26px;
         }
         .container{
-            border-left: 6em solid #d8dfe2;
-            border-right: 6em solid #d8dfe2;
             background: #fff;
             width: 96%;
             max-width: 650px;
@@ -22,6 +20,13 @@
             padding: 30px;
         }
         h1{
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid lightgrey;
+        }
+        h2{
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 3px;
@@ -75,6 +80,10 @@
                 </span>
         </strong>
         
+        <h2>
+                Onze toekomstige zzp/ondernemer gegevens
+        </h2>
+
         <p>
             <strong>
                 Naam
