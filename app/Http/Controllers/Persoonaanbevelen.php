@@ -22,6 +22,6 @@ class Persoonaanbevelen extends Controller
 
     	Mail::to('info@altijdverzorgd.nl')->send(new ContactPersoonaanbevelenRequest($request));
 
-    	return redirect()->back()->with('status', 'Your message has been received');
+    	return redirect('formthx');
     }
 }
