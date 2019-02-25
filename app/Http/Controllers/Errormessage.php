@@ -22,6 +22,6 @@ class Errormessage extends Controller
 
     	Mail::to('error@altijdverzorgd.nl')->send(new ContactErrorMessageRequest($request));
 
-    	return redirect()->back()->with('status', 'Your message has been received');
+    	return redirect('formthx');
     }
 }

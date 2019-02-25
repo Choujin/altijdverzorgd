@@ -11398,6 +11398,15 @@ section:first-of-type {
   height: 450px;
 }
 
+.thankyou-bg {
+  background-image: url(/images/altijdverzorgd-thankyou-bg.jpg?7f8364eb8e15dd58dfc144a91ac80da1);
+  background-repeat: no-repeat;
+  /* background-attaQzchment: fixed; */
+  background-position: center;
+  background-size: cover;
+  height: 450px;
+}
+
 @media all and (max-width: 1199px) {
   .page1-1 {
     background-image: url(/images/bg-lg.jpg?89dfb0ebd6eab9293abe47163b1d6a30);
