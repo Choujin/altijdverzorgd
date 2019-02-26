@@ -10,5 +10,3 @@ Install guild
 6. use "php artisan migrate" in console
 
 now you ready to go
-
-branch added
