@@ -6,7 +6,7 @@ Route::get('/business-info','BusinessInfo@startpage');
 Route::get('/formthx','FormThankYou@startpage');
 
 //Algemene voorwaarden
-Route::get('generalconditions' , 'Generalconditions@startpage');
+Route::get('algemene-voorwaarden' , 'AlgemeneVoorwaarden@startpage');
 
 //Persoonaanbevelen
 Route::get('persoonaanbevelen','Persoonaanbevelen@show');
